@@ -1,0 +1,1164 @@
+2024.10.30 19:47:39 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\µØÍ¼\nortantis' for client Visual Studio Code 1.94.2.
+2024.10.30 19:47:39 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 19:47:52 INFO  running 'C:\Users\LANLAN~1\AppData\Local\Temp\metals14523188022435223096\gradlew.bat --stacktrace --console=plain --init-script C:\Users\LANLAN~1\AppData\Local\Temp\metals14523188022435223096\init-script.gradle bloopInstall'
+2024.10.30 19:47:52 INFO  Downloading https://services.gradle.org/distributions/gradle-7.5-all.zip
+10ÔÂ 30, 2024 7:48:11 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+10ÔÂ 30, 2024 7:48:11 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+2024.10.30 19:51:51 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:01 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:01 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:01 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:02 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 6
+10ÔÂ 30, 2024 7:52:04 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: next on empty iterator
+java.util.NoSuchElementException: next on empty iterator
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	at scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	at scala.collection.IterableOps.head(Iterable.scala:222)
+	at scala.collection.IterableOps.head$(Iterable.scala:222)
+	at scala.collection.AbstractIterable.head(Iterable.scala:935)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:164)
+	at dotty.tools.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	at dotty.tools.pc.HoverProvider$.hover(HoverProvider.scala:40)
+	at dotty.tools.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:376)
+
+10ÔÂ 30, 2024 7:52:04 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-04-438.md
+2024.10.30 19:52:14 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:14 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\GraphCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:14 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\GraphCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:14 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-14-731.md
+2024.10.30 19:52:18 INFO  ..............................................................................................................................................................
+2024.10.30 19:52:25 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\GraphCreator.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:25 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapSettings.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:26 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapSettings.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:26 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-26-576.md
+2024.10.30 19:52:27 INFO  
+2024.10.30 19:52:27 INFO  Welcome to Gradle 7.5!
+2024.10.30 19:52:27 INFO  
+2024.10.30 19:52:27 INFO  Here are the highlights of this release:
+2024.10.30 19:52:27 INFO   - Support for Java 18
+2024.10.30 19:52:27 INFO   - Support for building with Groovy 4
+2024.10.30 19:52:27 INFO   - Much more responsive continuous builds
+2024.10.30 19:52:27 INFO   - Improved diagnostics for dependency resolution
+2024.10.30 19:52:27 INFO  
+2024.10.30 19:52:27 INFO  For more details see https://docs.gradle.org/7.5/release-notes.html
+2024.10.30 19:52:27 INFO  
+2024.10.30 19:52:27 INFO  Starting a Gradle Daemon (subsequent builds will be faster)
+2024.10.30 19:52:35 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapSettings.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:35 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-35-352.md
+2024.10.30 19:52:38 INFO  > Task :configureBloopInstall
+2024.10.30 19:52:39 INFO  > Task :bloopInstall
+2024.10.30 19:52:39 INFO  
+2024.10.30 19:52:39 INFO  Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+2024.10.30 19:52:39 INFO  
+2024.10.30 19:52:39 INFO  You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2024.10.30 19:52:39 INFO  
+2024.10.30 19:52:39 INFO  See https://docs.gradle.org/7.5/userguide/command_line_interface.html#sec:command_line_warnings
+2024.10.30 19:52:39 INFO  
+2024.10.30 19:52:39 INFO  BUILD SUCCESSFUL in 4m 47s
+2024.10.30 19:52:39 INFO  2 actionable tasks: 2 executed
+2024.10.30 19:52:39 INFO  time: ran 'gradle bloopInstall' in 4m47s
+2024.10.30 19:52:39 INFO  Attempting to connect to the build server...
+2024.10.30 19:52:39 INFO  No running Bloop server found, starting one.
+2024.10.30 19:52:43 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\MapSettings.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:43 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:43 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:43 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-43-840.md
+2024.10.30 19:52:45 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:45 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-45-529.md
+2024.10.30 19:52:45 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:46 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:46 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-46-682.md
+2024.10.30 19:52:46 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:46 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-46-903.md
+10ÔÂ 30, 2024 7:52:47 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-47-144.md
+2024.10.30 19:52:48 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:49 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.30 19:52:49 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:57 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 83
+2024.10.30 19:52:57 INFO  no build target found for E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\WorldGraph.java. Using presentation compiler with project's scala-library version: 3.3.4
+10ÔÂ 30, 2024 7:52:57 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 86
+10ÔÂ 30, 2024 7:52:57 ÏÂÎç scala.meta.internal.pc.CompilerAccess handleError
+ÑÏÖØ: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\µØÍ¼\nortantis\.metals\.reports\metals-full\2024-10-30\r_compiler-error_19-52-57-482.md
+2024.10.30 19:52:57 INFO  Starting compilation server
+2024.10.30 19:52:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\µØÍ¼\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.30 19:53:00 INFO  time: Connected to build server in 20s
+2024.10.30 19:53:00 INFO  Connected to Build server: Bloop v2.0.3
+2024.10.30 19:53:00 INFO  running doctor check
+2024.10.30 19:53:00 INFO  java targets: Nortantis, Nortantis-test
+2024.10.30 19:53:02 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 19:53:10 INFO  time: indexed workspace in 10s
+2024.10.30 19:53:10 INFO  compiling nortantis (168 java sources)
+2024.10.30 19:53:10 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 19:53:10 WARN  javac exited with exit code 2
+2024.10.30 19:53:10 INFO  time: compiled Nortantis in 0.44s
+2024.10.30 19:53:10 INFO  compiling nortantis (168 java sources)
+2024.10.30 19:53:10 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 19:53:10 WARN  javac exited with exit code 2
+2024.10.30 19:53:10 INFO  time: compiled Nortantis in 0.32s
+2024.10.30 19:53:10 INFO  compiling nortantis (168 java sources)
+2024.10.30 19:53:12 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 19:53:12 WARN  javac exited with exit code 2
+2024.10.30 19:53:12 INFO  time: compiled Nortantis in 0.35s
+2024.10.30 20:00:08 INFO  Shutting down server
+2024.10.30 20:00:08 INFO  shutting down Metals
+2024.10.30 20:00:08 INFO  Shut down connection with build server.
+2024.10.30 20:00:08 INFO  Exiting server
+2024.10.30 20:02:40 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\µØÍ¼\nortantis' for client Visual Studio Code 1.94.2.
+2024.10.30 20:02:41 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 20:02:41 INFO  Attempting to connect to the build server...
+2024.10.30 20:02:41 INFO  Found a Bloop server running
+2024.10.30 20:02:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\µØÍ¼\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.30 20:02:41 INFO  time: Connected to build server in 0.57s
+2024.10.30 20:02:41 INFO  Connected to Build server: Bloop v2.0.3
+2024.10.30 20:02:42 INFO  running doctor check
+2024.10.30 20:02:42 INFO  java targets: Nortantis, Nortantis-test
+2024.10.30 20:02:44 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 20:02:44 INFO  time: indexed workspace in 2.04s
+10ÔÂ 30, 2024 8:03:09 ÏÂÎç org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ĞÅÏ¢: Unsupported notification method: $/setTrace
+2024.10.30 20:04:52 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:04:52 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:04:52 WARN  javac exited with exit code 2
+2024.10.30 20:04:52 INFO  time: compiled Nortantis in 0.62s
+10ÔÂ 30, 2024 8:04:53 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 2
+10ÔÂ 30, 2024 8:08:21 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 97
+2024.10.30 20:08:24 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:08:24 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:08:24 WARN  javac exited with exit code 2
+2024.10.30 20:08:24 INFO  time: compiled Nortantis in 0.38s
+2024.10.30 20:08:38 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:08:38 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:08:38 WARN  javac exited with exit code 2
+2024.10.30 20:08:38 INFO  time: compiled Nortantis in 0.36s
+2024.10.30 20:08:48 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:08:48 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:08:48 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:08:48 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:08:48 WARN  javac exited with exit code 2
+2024.10.30 20:08:48 INFO  time: compiled Nortantis in 0.37s
+10ÔÂ 30, 2024 8:09:20 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 189
+2024.10.30 20:09:38 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:09:39 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:09:39 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:09:39 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:09:38 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:09:38 WARN  javac exited with exit code 2
+2024.10.30 20:09:38 INFO  time: compiled Nortantis in 0.38s
+10ÔÂ 30, 2024 8:09:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 255
+2024.10.30 20:09:48 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:09:48 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:09:48 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:09:48 WARN  javac exited with exit code 2
+2024.10.30 20:09:48 INFO  time: compiled Nortantis in 0.42s
+10ÔÂ 30, 2024 8:10:11 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 281
+10ÔÂ 30, 2024 8:10:28 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 311
+10ÔÂ 30, 2024 8:10:31 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 326
+2024.10.30 20:10:46 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:10:46 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:10:46 WARN  javac exited with exit code 2
+2024.10.30 20:10:46 INFO  time: compiled Nortantis in 0.31s
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 356
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 361
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 362
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 363
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 369
+10ÔÂ 30, 2024 8:10:48 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 370
+2024.10.30 20:10:52 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:10:52 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:10:52 WARN  javac exited with exit code 2
+2024.10.30 20:10:52 INFO  time: compiled Nortantis in 0.29s
+10ÔÂ 30, 2024 8:11:35 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 448
+10ÔÂ 30, 2024 8:13:03 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 502
+10ÔÂ 30, 2024 8:13:08 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 514
+10ÔÂ 30, 2024 8:13:08 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 515
+10ÔÂ 30, 2024 8:13:08 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 516
+10ÔÂ 30, 2024 8:13:15 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 532
+10ÔÂ 30, 2024 8:13:15 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 533
+10ÔÂ 30, 2024 8:13:22 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 560
+2024.10.30 20:14:12 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:14:12 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:14:12 WARN  javac exited with exit code 2
+2024.10.30 20:14:12 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:14:13 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\Font.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:14:12 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:14:13 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:14:13 WARN  javac exited with exit code 2
+2024.10.30 20:14:13 INFO  time: compiled Nortantis in 0.34s
+10ÔÂ 30, 2024 8:18:47 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 720
+2024.10.30 20:19:13 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:19:13 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:19:13 WARN  javac exited with exit code 2
+2024.10.30 20:19:13 INFO  time: compiled Nortantis in 0.37s
+2024.10.30 20:19:15 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:19:15 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:19:15 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:19:15 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:19:15 WARN  javac exited with exit code 2
+2024.10.30 20:19:15 INFO  time: compiled Nortantis in 0.34s
+2024.10.30 20:19:27 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:19:27 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:19:27 WARN  javac exited with exit code 2
+2024.10.30 20:19:27 INFO  time: compiled Nortantis in 0.3s
+2024.10.30 20:19:57 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:19:57 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:19:57 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:19:57 WARN  javac exited with exit code 2
+2024.10.30 20:19:57 INFO  time: compiled Nortantis in 0.38s
+2024.10.30 20:20:01 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:20:01 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:20:01 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:20:01 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:20:01 WARN  javac exited with exit code 2
+2024.10.30 20:20:01 INFO  time: compiled Nortantis in 0.3s
+10ÔÂ 30, 2024 8:20:07 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 907
+2024.10.30 20:20:13 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:20:13 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:20:13 WARN  javac exited with exit code 2
+2024.10.30 20:20:13 INFO  time: compiled Nortantis in 0.3s
+2024.10.30 20:20:13 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:20:14 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:20:14 WARN  javac exited with exit code 2
+2024.10.30 20:20:14 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:21:18 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:21:18 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:21:18 WARN  javac exited with exit code 2
+2024.10.30 20:21:18 INFO  time: compiled Nortantis in 0.41s
+2024.10.30 20:21:20 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:21:20 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:21:20 WARN  javac exited with exit code 2
+2024.10.30 20:21:20 INFO  time: compiled Nortantis in 0.37s
+2024.10.30 20:21:26 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:21:26 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:21:26 WARN  javac exited with exit code 2
+2024.10.30 20:21:26 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:21:33 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:21:33 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:21:33 WARN  javac exited with exit code 2
+2024.10.30 20:21:33 INFO  time: compiled Nortantis in 0.34s
+10ÔÂ 30, 2024 8:21:34 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1117
+10ÔÂ 30, 2024 8:21:54 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1137
+2024.10.30 20:21:55 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:21:55 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:21:55 WARN  javac exited with exit code 2
+2024.10.30 20:21:55 INFO  time: compiled Nortantis in 0.36s
+10ÔÂ 30, 2024 8:22:50 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1171
+10ÔÂ 30, 2024 8:23:04 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1204
+2024.10.30 20:23:32 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:23:32 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:23:32 WARN  javac exited with exit code 2
+2024.10.30 20:23:32 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:24:06 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:06 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:24:06 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:24:06 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:06 WARN  javac exited with exit code 2
+2024.10.30 20:24:06 INFO  time: compiled Nortantis in 0.39s
+10ÔÂ 30, 2024 8:24:10 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1344
+2024.10.30 20:24:14 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:14 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:14 WARN  javac exited with exit code 2
+2024.10.30 20:24:14 INFO  time: compiled Nortantis in 0.37s
+2024.10.30 20:24:14 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:15 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:24:16 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:16 WARN  javac exited with exit code 2
+2024.10.30 20:24:16 INFO  time: compiled Nortantis in 0.32s
+2024.10.30 20:24:25 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:25 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:25 WARN  javac exited with exit code 2
+2024.10.30 20:24:25 INFO  time: compiled Nortantis in 0.31s
+2024.10.30 20:24:41 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:41 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:24:41 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:41 WARN  javac exited with exit code 2
+2024.10.30 20:24:41 INFO  time: compiled Nortantis in 0.32s
+10ÔÂ 30, 2024 8:24:42 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1423
+2024.10.30 20:24:41 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:42 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:42 WARN  javac exited with exit code 2
+2024.10.30 20:24:42 INFO  time: compiled Nortantis in 0.3s
+2024.10.30 20:24:42 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:24:42 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:24:42 WARN  javac exited with exit code 2
+2024.10.30 20:24:42 INFO  time: compiled Nortantis in 0.3s
+2024.10.30 20:25:20 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:25:20 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:25:20 WARN  javac exited with exit code 2
+2024.10.30 20:25:20 INFO  time: compiled Nortantis in 0.34s
+10ÔÂ 30, 2024 8:25:30 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1501
+10ÔÂ 30, 2024 8:25:30 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1502
+10ÔÂ 30, 2024 8:25:30 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1503
+10ÔÂ 30, 2024 8:25:35 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1523
+10ÔÂ 30, 2024 8:25:46 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1552
+10ÔÂ 30, 2024 8:25:46 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1553
+10ÔÂ 30, 2024 8:25:46 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1554
+2024.10.30 20:40:06 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:06 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:06 WARN  javac exited with exit code 2
+2024.10.30 20:40:06 INFO  time: compiled Nortantis in 0.33s
+10ÔÂ 30, 2024 8:40:11 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+¾¯¸æ: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/e%3A/TRPG/fu/%E5%9C%B0%E5%9B%BE/nortantis/src/nortantis/platform/awt/AwtFont.java?%7B%22path%22%3A%22e%3A%5C%5CTRPG%5C%5Cfu%5C%5C%E5%9C%B0%E5%9B%BE%5C%5Cnortantis%5C%5Csrc%5C%5Cnortantis%5C%5Cplatform%5C%5Cawt%5C%5CAwtFont.java%22%2C%22ref%22%3A%22~%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:130)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:774)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:771)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:698)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.10.30 20:40:18 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:18 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:18 WARN  javac exited with exit code 2
+2024.10.30 20:40:18 INFO  time: compiled Nortantis in 0.34s
+2024.10.30 20:40:39 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:40 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:40 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:39 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:39 WARN  javac exited with exit code 2
+2024.10.30 20:40:39 INFO  time: compiled Nortantis in 0.41s
+2024.10.30 20:40:39 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:39 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:39 WARN  javac exited with exit code 2
+2024.10.30 20:40:39 INFO  time: compiled Nortantis in 0.32s
+2024.10.30 20:40:41 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:41 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:41 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:41 WARN  javac exited with exit code 2
+2024.10.30 20:40:41 INFO  time: compiled Nortantis in 0.34s
+2024.10.30 20:40:44 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:44 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:44 WARN  javac exited with exit code 2
+2024.10.30 20:40:44 INFO  time: compiled Nortantis in 0.32s
+2024.10.30 20:40:46 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:46 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:46 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:46 WARN  javac exited with exit code 2
+2024.10.30 20:40:46 INFO  time: compiled Nortantis in 0.31s
+2024.10.30 20:40:50 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:50 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:50 WARN  javac exited with exit code 2
+2024.10.30 20:40:50 INFO  time: compiled Nortantis in 0.34s
+2024.10.30 20:40:50 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:50 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:50 WARN  javac exited with exit code 2
+2024.10.30 20:40:50 INFO  time: compiled Nortantis in 0.31s
+2024.10.30 20:40:52 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:52 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:52 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:52 WARN  javac exited with exit code 2
+2024.10.30 20:40:52 INFO  time: compiled Nortantis in 0.32s
+2024.10.30 20:40:55 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:40:55 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFactory.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:40:55 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:40:55 WARN  javac exited with exit code 2
+2024.10.30 20:40:55 INFO  time: compiled Nortantis in 0.39s
+2024.10.30 20:42:23 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:42:23 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:42:23 WARN  javac exited with exit code 2
+2024.10.30 20:42:23 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:42:23 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:42:23 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:42:23 WARN  javac exited with exit code 2
+2024.10.30 20:42:23 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:42:24 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:42:24 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:42:24 WARN  javac exited with exit code 2
+2024.10.30 20:42:24 INFO  time: compiled Nortantis in 0.31s
+10ÔÂ 30, 2024 8:42:30 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1853
+10ÔÂ 30, 2024 8:44:00 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1892
+10ÔÂ 30, 2024 8:44:00 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1893
+10ÔÂ 30, 2024 8:44:00 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1894
+10ÔÂ 30, 2024 8:44:14 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 1932
+2024.10.30 20:45:53 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:45:53 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:45:53 WARN  javac exited with exit code 2
+2024.10.30 20:45:53 INFO  time: compiled Nortantis in 0.35s
+2024.10.30 20:45:58 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:45:58 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:45:58 WARN  javac exited with exit code 2
+2024.10.30 20:45:58 INFO  time: compiled Nortantis in 0.34s
+2024.10.30 20:46:00 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:00 ERROR code navigation does not work for the file 'E:\TRPG\fu\µØÍ¼\nortantis\src\nortantis\platform\awt\AwtFont.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.30 20:46:00 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:00 WARN  javac exited with exit code 2
+2024.10.30 20:46:00 INFO  time: compiled Nortantis in 0.35s
+10ÔÂ 30, 2024 8:46:19 ÏÂÎç org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+¾¯¸æ: Unmatched cancel notification for request id 2051
+2024.10.30 20:46:25 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:25 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:25 WARN  javac exited with exit code 2
+2024.10.30 20:46:25 INFO  time: compiled Nortantis in 0.35s
+2024.10.30 20:46:32 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:32 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:32 WARN  javac exited with exit code 2
+2024.10.30 20:46:32 INFO  time: compiled Nortantis in 0.37s
+2024.10.30 20:46:37 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:37 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:37 WARN  javac exited with exit code 2
+2024.10.30 20:46:37 INFO  time: compiled Nortantis in 0.37s
+2024.10.30 20:46:37 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:38 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:38 WARN  javac exited with exit code 2
+2024.10.30 20:46:38 INFO  time: compiled Nortantis in 0.31s
+2024.10.30 20:46:46 INFO  compiling nortantis (168 java sources)
+2024.10.30 20:46:46 WARN  Unexpected javac output: ´íÎó: ÕÒ²»µ½ÎÄ¼ş: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ÓÃ·¨: javac <Ñ¡Ïî> <Ô´ÎÄ¼ş>
+Ê¹ÓÃ --help ¿ÉÁĞ³ö¿ÉÄÜµÄÑ¡Ïî.
+2024.10.30 20:46:46 WARN  javac exited with exit code 2
+2024.10.30 20:46:46 INFO  time: compiled Nortantis in 0.33s
+2024.10.30 20:49:44 INFO  Shutting down server
+2024.10.30 20:49:44 INFO  shutting down Metals
+2024.10.30 20:49:44 INFO  Shut down connection with build server.
+2024.10.30 20:49:44 INFO  Exiting server
+2024.10.31 11:00:57 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\åœ°å›¾\nortantis' for client Visual Studio Code 1.95.0.
+2024.10.31 11:00:58 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.31 11:00:58 INFO  no build target found for E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\AboutDialog.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.31 11:00:59 INFO  no build target found for E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\AboutDialog.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.31 11:00:59 INFO  Attempting to connect to the build server...
+2024.10.31 11:00:59 INFO  Found a Bloop server running
+10æœˆ 31, 2024 11:01:03 ä¸Šåˆ scala.meta.internal.pc.CompilerAccess handleError
+ä¸¥é‡: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\åœ°å›¾\nortantis\.metals\.reports\metals-full\2024-10-31\r_compiler-error_11-01-02-732.md
+2024.10.31 11:01:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\åœ°å›¾\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.31 11:01:11 INFO  time: Connected to build server in 11s
+2024.10.31 11:01:11 INFO  Connected to Build server: Bloop v2.0.3
+2024.10.31 11:01:10 INFO  time: Imported build in 0.36s
+2024.10.31 11:01:10 INFO  running doctor check
+2024.10.31 11:01:10 INFO  java targets: Nortantis, Nortantis-test
+2024.10.31 11:01:13 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.31 11:03:22 INFO  time: indexed workspace in 2m11s
+2024.10.31 11:03:24 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:03:24 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:03:24 WARN  javac exited with exit code 2
+2024.10.31 11:03:24 INFO  time: compiled Nortantis in 0.8s
+2024.10.31 11:03:25 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:03:25 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:03:25 WARN  javac exited with exit code 2
+2024.10.31 11:03:25 INFO  time: compiled Nortantis in 0.36s
+2024.10.31 11:03:30 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:03:30 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:03:30 WARN  javac exited with exit code 2
+2024.10.31 11:03:30 INFO  time: compiled Nortantis in 0.33s
+10æœˆ 31, 2024 11:07:10 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+10æœˆ 31, 2024 11:09:03 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+10æœˆ 31, 2024 11:11:00 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+10æœˆ 31, 2024 11:11:03 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+10æœˆ 31, 2024 11:11:14 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+10æœˆ 31, 2024 11:11:25 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 129
+2024.10.31 11:11:59 INFO  Shutting down server
+2024.10.31 11:11:59 INFO  shutting down Metals
+2024.10.31 11:11:59 INFO  Shut down connection with build server.
+2024.10.31 11:11:59 INFO  Exiting server
+2024.10.31 11:51:40 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\åœ°å›¾\nortantis' for client Visual Studio Code 1.95.0.
+2024.10.31 11:51:41 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.31 11:51:41 INFO  no build target found for E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\TextTool.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.31 11:51:43 INFO  no build target found for E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\TextTool.java. Using presentation compiler with project's scala-library version: 3.3.4
+2024.10.31 11:51:43 INFO  Attempting to connect to the build server...
+2024.10.31 11:51:43 INFO  Found a Bloop server running
+2024.10.31 11:51:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\åœ°å›¾\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.10.31 11:51:44 INFO  time: Connected to build server in 1.45s
+2024.10.31 11:51:44 INFO  Connected to Build server: Bloop v2.0.3
+2024.10.31 11:51:46 INFO  time: Imported build in 0.63s
+2024.10.31 11:51:46 INFO  running doctor check
+2024.10.31 11:51:46 INFO  java targets: Nortantis, Nortantis-test
+10æœˆ 31, 2024 11:51:49 ä¸Šåˆ scala.meta.internal.pc.CompilerAccess handleError
+ä¸¥é‡: A severe compiler error occurred, full details of the error can be found in the error report E:\TRPG\fu\åœ°å›¾\nortantis\.metals\.reports\metals-full\2024-10-31\r_compiler-error_11-51-49-025.md
+2024.10.31 11:51:49 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.31 11:51:49 INFO  time: indexed workspace in 3.65s
+2024.10.31 11:52:55 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:52:55 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:52:55 WARN  javac exited with exit code 2
+2024.10.31 11:52:55 INFO  time: compiled Nortantis in 0.53s
+2024.10.31 11:52:55 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:52:56 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:52:56 WARN  javac exited with exit code 2
+2024.10.31 11:52:56 INFO  time: compiled Nortantis in 0.33s
+2024.10.31 11:52:56 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:52:56 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:52:56 WARN  javac exited with exit code 2
+2024.10.31 11:52:56 INFO  time: compiled Nortantis in 0.29s
+2024.10.31 11:53:10 INFO  compiling nortantis (168 java sources)
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\JFontChooser.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.10.31 11:53:10 WARN  Unexpected javac output: é”™è¯¯: æ‰¾ä¸åˆ°æ–‡ä»¶: E:\TRPG\fu\é¦æ¿æµ˜\nortantis\src\nortantis\Background.java
+ç”¨æ³•: javac <é€‰é¡¹> <æºæ–‡ä»¶>
+ä½¿ç”¨ --help å¯åˆ—å‡ºå¯èƒ½çš„é€‰é¡¹.
+2024.10.31 11:53:10 WARN  javac exited with exit code 2
+2024.10.31 11:53:10 INFO  time: compiled Nortantis in 0.36s
+11æœˆ 01, 2024 11:21:55 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+2024.11.04 11:26:23 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\åœ°å›¾\nortantis' for client Visual Studio Code 1.95.0.
+2024.11.04 11:26:27 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.04 11:26:27 INFO  Attempting to connect to the build server...
+2024.11.04 11:26:27 INFO  No running Bloop server found, starting one.
+2024.11.04 11:26:28 INFO  Starting compilation server
+2024.11.04 11:26:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\åœ°å›¾\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.04 11:26:31 INFO  time: Connected to build server in 4.7s
+2024.11.04 11:26:31 INFO  Connected to Build server: Bloop v2.0.3
+2024.11.04 11:26:31 INFO  time: Imported build in 0.15s
+2024.11.04 11:26:31 INFO  running doctor check
+2024.11.04 11:26:31 INFO  java targets: Nortantis, Nortantis-test
+2024.11.04 11:26:38 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.04 11:26:38 INFO  time: indexed workspace in 6.46s
+2024.11.04 11:32:04 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:32:05 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:32:05 WARN  javac exited with exit code 2
+2024.11.04 11:32:05 INFO  time: compiled Nortantis in 1.59s
+11æœˆ 04, 2024 11:32:14 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 25
+11æœˆ 04, 2024 11:33:53 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 171
+2024.11.04 11:34:31 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:34:31 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:34:31 WARN  javac exited with exit code 2
+2024.11.04 11:34:31 INFO  time: compiled Nortantis in 0.46s
+2024.11.04 11:34:49 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:34:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:34:49 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:34:49 WARN  javac exited with exit code 2
+2024.11.04 11:34:49 INFO  time: compiled Nortantis in 0.45s
+2024.11.04 11:34:52 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:34:52 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:34:52 WARN  javac exited with exit code 2
+2024.11.04 11:34:52 INFO  time: compiled Nortantis in 0.49s
+2024.11.04 11:34:56 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:34:56 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:34:56 WARN  javac exited with exit code 2
+2024.11.04 11:34:56 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:35:00 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:00 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:00 WARN  javac exited with exit code 2
+2024.11.04 11:35:00 INFO  time: compiled Nortantis in 0.43s
+2024.11.04 11:35:05 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:05 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:05 WARN  javac exited with exit code 2
+2024.11.04 11:35:05 INFO  time: compiled Nortantis in 0.44s
+2024.11.04 11:35:09 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:09 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:09 WARN  javac exited with exit code 2
+2024.11.04 11:35:09 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:35:18 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:18 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:18 WARN  javac exited with exit code 2
+2024.11.04 11:35:18 INFO  time: compiled Nortantis in 0.45s
+2024.11.04 11:35:26 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:26 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:35:26 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:26 WARN  javac exited with exit code 2
+2024.11.04 11:35:26 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:35:30 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:35:30 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:30 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:30 WARN  javac exited with exit code 2
+2024.11.04 11:35:30 INFO  time: compiled Nortantis in 0.42s
+2024.11.04 11:35:39 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:39 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:35:39 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:35:39 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:39 WARN  javac exited with exit code 2
+2024.11.04 11:35:39 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:35:42 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:35:42 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:35:42 WARN  javac exited with exit code 2
+2024.11.04 11:35:42 INFO  time: compiled Nortantis in 0.46s
+2024.11.04 11:36:06 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:06 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:06 WARN  javac exited with exit code 2
+2024.11.04 11:36:06 INFO  time: compiled Nortantis in 0.44s
+2024.11.04 11:36:13 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:13 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:13 WARN  javac exited with exit code 2
+2024.11.04 11:36:13 INFO  time: compiled Nortantis in 0.43s
+2024.11.04 11:36:17 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:17 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:17 WARN  javac exited with exit code 2
+2024.11.04 11:36:17 INFO  time: compiled Nortantis in 0.44s
+11æœˆ 04, 2024 11:36:25 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 616
+2024.11.04 11:36:25 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:36:25 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:25 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:25 WARN  javac exited with exit code 2
+2024.11.04 11:36:25 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:36:46 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:46 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:46 WARN  javac exited with exit code 2
+2024.11.04 11:36:46 INFO  time: compiled Nortantis in 0.5s
+11æœˆ 04, 2024 11:36:48 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 672
+2024.11.04 11:36:50 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:50 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:50 WARN  javac exited with exit code 2
+2024.11.04 11:36:50 INFO  time: compiled Nortantis in 0.43s
+2024.11.04 11:36:50 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:36:51 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:36:51 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:36:51 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:36:51 WARN  javac exited with exit code 2
+2024.11.04 11:36:51 INFO  time: compiled Nortantis in 0.39s
+11æœˆ 04, 2024 11:36:54 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 700
+2024.11.04 11:37:00 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:00 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:00 WARN  javac exited with exit code 2
+2024.11.04 11:37:00 INFO  time: compiled Nortantis in 0.4s
+11æœˆ 04, 2024 11:37:02 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 737
+2024.11.04 11:37:11 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:11 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:11 WARN  javac exited with exit code 2
+2024.11.04 11:37:11 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:37:15 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:15 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:15 WARN  javac exited with exit code 2
+2024.11.04 11:37:15 INFO  time: compiled Nortantis in 0.35s
+11æœˆ 04, 2024 11:37:16 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 784
+2024.11.04 11:37:19 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:19 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:19 WARN  javac exited with exit code 2
+2024.11.04 11:37:19 INFO  time: compiled Nortantis in 0.43s
+2024.11.04 11:37:47 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:47 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:47 WARN  javac exited with exit code 2
+2024.11.04 11:37:47 INFO  time: compiled Nortantis in 0.47s
+2024.11.04 11:37:52 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:37:52 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:37:52 WARN  javac exited with exit code 2
+2024.11.04 11:37:52 INFO  time: compiled Nortantis in 0.41s
+11æœˆ 04, 2024 11:37:53 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 869
+11æœˆ 04, 2024 11:37:53 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 872
+2024.11.04 11:38:36 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:38:36 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:38:36 WARN  javac exited with exit code 2
+2024.11.04 11:38:36 INFO  time: compiled Nortantis in 0.42s
+2024.11.04 11:38:38 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:38:38 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:38:38 WARN  javac exited with exit code 2
+2024.11.04 11:38:38 INFO  time: compiled Nortantis in 0.41s
+11æœˆ 04, 2024 11:38:47 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1014
+2024.11.04 11:39:01 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:39:01 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:39:01 WARN  javac exited with exit code 2
+2024.11.04 11:39:01 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:39:02 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:39:02 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:39:02 WARN  javac exited with exit code 2
+2024.11.04 11:39:02 INFO  time: compiled Nortantis in 0.52s
+2024.11.04 11:39:27 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:39:27 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:39:27 WARN  javac exited with exit code 2
+2024.11.04 11:39:27 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:39:33 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:39:33 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:39:33 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:39:33 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:39:33 WARN  javac exited with exit code 2
+2024.11.04 11:39:33 INFO  time: compiled Nortantis in 0.45s
+2024.11.04 11:39:50 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:39:50 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:39:50 WARN  javac exited with exit code 2
+2024.11.04 11:39:50 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:40:07 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:07 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:07 WARN  javac exited with exit code 2
+2024.11.04 11:40:07 INFO  time: compiled Nortantis in 0.43s
+2024.11.04 11:40:11 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:11 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:11 WARN  javac exited with exit code 2
+2024.11.04 11:40:11 INFO  time: compiled Nortantis in 0.38s
+11æœˆ 04, 2024 11:40:12 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1199
+2024.11.04 11:40:19 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:19 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:19 WARN  javac exited with exit code 2
+2024.11.04 11:40:19 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:40:24 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:24 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:24 WARN  javac exited with exit code 2
+2024.11.04 11:40:24 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:40:34 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:34 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:34 WARN  javac exited with exit code 2
+2024.11.04 11:40:34 INFO  time: compiled Nortantis in 0.4s
+2024.11.04 11:40:38 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:38 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:38 WARN  javac exited with exit code 2
+2024.11.04 11:40:38 INFO  time: compiled Nortantis in 0.42s
+2024.11.04 11:40:44 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\MainWindow.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:40:44 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:44 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:44 WARN  javac exited with exit code 2
+2024.11.04 11:40:44 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:40:45 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:45 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:45 WARN  javac exited with exit code 2
+2024.11.04 11:40:45 INFO  time: compiled Nortantis in 0.38s
+11æœˆ 04, 2024 11:40:50 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1340
+2024.11.04 11:40:50 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:40:50 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:40:50 WARN  javac exited with exit code 2
+2024.11.04 11:40:50 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:41:33 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:41:33 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:41:33 WARN  javac exited with exit code 2
+2024.11.04 11:41:33 INFO  time: compiled Nortantis in 0.38s
+2024.11.04 11:41:33 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:41:34 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:41:34 WARN  javac exited with exit code 2
+2024.11.04 11:41:34 INFO  time: compiled Nortantis in 0.37s
+2024.11.04 11:42:26 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:42:26 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:42:26 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:42:26 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:42:26 WARN  javac exited with exit code 2
+2024.11.04 11:42:26 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:42:32 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:42:32 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:42:32 WARN  javac exited with exit code 2
+2024.11.04 11:42:32 INFO  time: compiled Nortantis in 0.38s
+2024.11.04 11:42:36 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:42:36 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:42:36 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:42:36 WARN  javac exited with exit code 2
+2024.11.04 11:42:36 INFO  time: compiled Nortantis in 0.38s
+2024.11.04 11:42:40 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:42:40 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:42:40 WARN  javac exited with exit code 2
+2024.11.04 11:42:40 INFO  time: compiled Nortantis in 0.4s
+11æœˆ 04, 2024 11:42:42 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1524
+11æœˆ 04, 2024 11:42:42 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1525
+11æœˆ 04, 2024 11:42:47 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1548
+2024.11.04 11:42:58 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:42:58 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:42:58 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:42:58 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:42:58 WARN  javac exited with exit code 2
+2024.11.04 11:42:58 INFO  time: compiled Nortantis in 0.42s
+2024.11.04 11:43:04 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:43:04 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:04 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:43:04 WARN  javac exited with exit code 2
+2024.11.04 11:43:04 INFO  time: compiled Nortantis in 0.39s
+2024.11.04 11:43:17 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:43:17 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:17 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:43:17 WARN  javac exited with exit code 2
+2024.11.04 11:43:17 INFO  time: compiled Nortantis in 0.47s
+11æœˆ 04, 2024 11:43:19 ä¸Šåˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1640
+2024.11.04 11:43:23 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:43:23 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:43:23 WARN  javac exited with exit code 2
+2024.11.04 11:43:23 INFO  time: compiled Nortantis in 0.4s
+2024.11.04 11:43:31 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:43:31 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:31 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:31 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:31 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\swing\ToolsPanel.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 11:43:31 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:43:31 WARN  javac exited with exit code 2
+2024.11.04 11:43:31 INFO  time: compiled Nortantis in 0.41s
+2024.11.04 11:43:54 INFO  compiling nortantis (168 java sources)
+2024.11.04 11:43:54 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 11:43:54 WARN  javac exited with exit code 2
+2024.11.04 11:43:54 INFO  time: compiled Nortantis in 0.39s
+11æœˆ 04, 2024 2:41:10 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1715
+11æœˆ 04, 2024 2:41:10 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1720
+11æœˆ 04, 2024 3:59:16 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+11æœˆ 04, 2024 3:59:18 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+ä¿¡æ¯: Unsupported notification method: $/setTrace
+2024.11.04 21:14:15 INFO  time: code lens generation in 1.73s
+11æœˆ 04, 2024 9:16:42 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1825
+11æœˆ 04, 2024 9:16:43 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1830
+11æœˆ 04, 2024 9:17:07 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1883
+11æœˆ 04, 2024 9:17:09 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 1890
+2024.11.04 21:48:38 INFO  Started: Metals version 1.4.0 in folders 'E:\TRPG\fu\åœ°å›¾\nortantis' for client Visual Studio Code 1.95.0.
+2024.11.04 21:48:42 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.04 21:48:43 INFO  Attempting to connect to the build server...
+2024.11.04 21:48:43 INFO  Found a Bloop server running
+2024.11.04 21:48:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\TRPG\fu\åœ°å›¾\nortantis\.metals\bsp.trace.json or C:\Users\LanLanLan\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.11.04 21:48:43 INFO  time: Connected to build server in 0.67s
+2024.11.04 21:48:43 INFO  Connected to Build server: Bloop v2.0.3
+2024.11.04 21:48:43 INFO  running doctor check
+2024.11.04 21:48:43 INFO  java targets: Nortantis, Nortantis-test
+2024.11.04 21:48:46 INFO  compiling nortantis (168 java sources)
+2024.11.04 21:48:47 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 21:48:47 WARN  javac exited with exit code 2
+2024.11.04 21:48:47 INFO  time: compiled Nortantis in 1.07s
+2024.11.04 21:48:49 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.11.04 21:48:49 INFO  time: indexed workspace in 5.42s
+2024.11.04 21:48:49 INFO  compiling nortantis (168 java sources)
+2024.11.04 21:48:49 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 21:48:49 WARN  javac exited with exit code 2
+2024.11.04 21:48:49 INFO  time: compiled Nortantis in 0.3s
+2024.11.04 21:48:49 INFO  compiling nortantis (168 java sources)
+2024.11.04 21:48:49 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 21:48:49 WARN  javac exited with exit code 2
+2024.11.04 21:48:49 INFO  time: compiled Nortantis in 0.36s
+11æœˆ 04, 2024 9:50:03 ä¸‹åˆ org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+è­¦å‘Š: Unmatched cancel notification for request id 22
+2024.11.04 21:50:09 INFO  compiling nortantis (168 java sources)
+2024.11.04 21:50:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\MapSettings.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.04 21:50:09 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 21:50:09 WARN  javac exited with exit code 2
+2024.11.04 21:50:09 INFO  time: compiled Nortantis in 0.47s
+2024.11.04 21:50:09 INFO  compiling nortantis (168 java sources)
+2024.11.04 21:50:10 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 21:50:10 WARN  javac exited with exit code 2
+2024.11.04 21:50:10 INFO  time: compiled Nortantis in 0.32s
+2024.11.04 22:45:45 INFO  compiling nortantis (168 java sources)
+2024.11.04 22:45:45 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 22:45:45 WARN  javac exited with exit code 2
+2024.11.04 22:45:45 INFO  time: compiled Nortantis in 0.46s
+2024.11.04 22:45:45 INFO  compiling nortantis (168 java sources)
+2024.11.04 22:45:45 WARN  Unexpected javac output: ï¿½ï¿½ï¿½ï¿½: ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½: E:\TRPG\fu\åœ°å›¾\nortantis\src\nortantis\Background.java
+ï¿½Ã·ï¿½: javac <Ñ¡ï¿½ï¿½> <Ô´ï¿½Ä¼ï¿½>
+Ê¹ï¿½ï¿½ --help ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½Üµï¿½Ñ¡ï¿½ï¿½.
+2024.11.04 22:45:45 WARN  javac exited with exit code 2
+2024.11.04 22:45:45 INFO  time: compiled Nortantis in 0.48s

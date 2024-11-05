@@ -33,7 +33,7 @@ public class BooksWidget
 
 		JPanel buttonsPanel = new JPanel();
 		buttonsPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-		JButton checkAll = new JButton("Check All");
+		JButton checkAll = new JButton("全部检查");
 		checkAll.addActionListener(new ActionListener()
 		{
 			@Override
@@ -44,7 +44,7 @@ public class BooksWidget
 			}
 		});
 
-		JButton uncheckAll = new JButton("Uncheck All");
+		JButton uncheckAll = new JButton("取消选中全部");
 		uncheckAll.addActionListener(new ActionListener()
 		{
 			@Override

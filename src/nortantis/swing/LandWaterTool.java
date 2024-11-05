@@ -152,22 +152,23 @@ public class LandWaterTool extends EditorTool
 		};
 		oceanButton.addActionListener(brushActionListener);
 
-		lakesButton = new JRadioButton("Lakes");
+		lakesButton = new JRadioButton("湖泊");
 		group.add(lakesButton);
 		radioButtons.add(lakesButton);
 		lakesButton.setToolTipText(
-				"Lakes are the same as ocean except they have no ocean effects (waves or darkening) along coastlines, and they don't do coastline smoothing when enabled.");
+				"湖泊与海洋相同，但在海岸线上没有海洋效果（波浪或变暗），并且在启用时不会进行海岸线平滑处理。");
 		lakesButton.addActionListener(brushActionListener);
 
-		riversButton = new JRadioButton("Rivers");
+		riversButton = new JRadioButton("河流");
 		group.add(riversButton);
 		radioButtons.add(riversButton);
 		riversButton.addActionListener(brushActionListener);
 
-		paintRegionButton = new JRadioButton("Paint region");
-		fillRegionColorButton = new JRadioButton("Fill region color");
-		mergeRegionsButton = new JRadioButton("Merge regions");
-		landButton = new JRadioButton("Land");
+		paintRegionButton = new JRadioButton("绘制区域");
+		fillRegionColorButton = new JRadioButton("填充区域颜色");
+		mergeRegionsButton = new JRadioButton("合并区域");
+		landButton = new JRadioButton("土地");
+
 
 		group.add(paintRegionButton);
 		radioButtons.add(paintRegionButton);
@@ -188,13 +189,13 @@ public class LandWaterTool extends EditorTool
 		landButton.addActionListener(brushActionListener);
 
 		oceanButton.setSelected(true); // Selected by default
-		organizer.addLabelAndComponentsVertical("Brush:", "", radioButtons);
+		organizer.addLabelAndComponentsVertical("刷子:", "", radioButtons);
 
 		// River options
 		{
-			modeWidget = new DrawModeWidget("Draw rivers", "Erase rivers", false, "", false, "",
+			modeWidget = new DrawModeWidget("绘制河流", "清除河流", false, "", false, "",
 					() -> brushActionListener.actionPerformed(null));
-			modeHider = modeWidget.addToOrganizer(organizer, "Whether to draw or erase rivers");
+			modeHider = modeWidget.addToOrganizer(organizer, "绘制还是擦除河流");
 
 			riverWidthSlider = new JSlider(1, 15);
 			final int initialValue = 1;
@@ -202,7 +203,7 @@ public class LandWaterTool extends EditorTool
 			SwingHelper.setSliderWidthForSidePanel(riverWidthSlider);
 			SliderWithDisplayedValue sliderWithDisplay = new SliderWithDisplayedValue(riverWidthSlider);
 			riverOptionHider = sliderWithDisplay.addToOrganizer(organizer, "Width:",
-					"River width to draw. Note that different widths might look the same depending on the resolution the map is drawn at.");
+					"绘制的河流宽度。 请注意，不同的宽度可能看起来一样，这取决于绘制地图的分辨率。");
 		}
 
 		// Color chooser
@@ -210,27 +211,27 @@ public class LandWaterTool extends EditorTool
 		colorDisplay.setBackground(Color.black);
 
 
-		JButton chooseButton = new JButton("Choose");
+		JButton chooseButton = new JButton("选择");
 		chooseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
 				cancelSelectColorFromMap();
-				SwingHelper.showColorPickerWithPreviewPanel(toolOptionsPanel, colorDisplay, "Region Color");
+				SwingHelper.showColorPickerWithPreviewPanel(toolOptionsPanel, colorDisplay, "区域颜色");
 			}
 		});
 		colorChooserHider = organizer.addLabelAndComponentsHorizontal("Color:", "", Arrays.asList(colorDisplay, chooseButton),
 				SwingHelper.colorPickerLeftPadding);
 
 
-		selectColorFromMapButton = new JToggleButton("Select Color From Map");
+		selectColorFromMapButton = new JToggleButton("从地图上选择颜色");
 		selectColorFromMapButton
-				.setToolTipText("To select the color of an existing region, click this button, then click that region on the map.");
+				.setToolTipText("要选择现有区域的颜色，请单击此按钮，然后单击地图上的该区域。");
 		selectColorHider = organizer.addLabelAndComponent("", "", selectColorFromMapButton, 0);
 
 
-		JButton generateColorButton = new JButton("Generate Color");
-		generateColorButton.setToolTipText("Generate a new color based on the random generation settings below.");
+		JButton generateColorButton = new JButton("生成颜色");
+		generateColorButton.setToolTipText("根据下面的随机生成设置生成新颜色。");
 		generateColorButton.addActionListener(new ActionListener()
 		{
 			@Override
@@ -249,9 +250,9 @@ public class LandWaterTool extends EditorTool
 		brushSizeComboBox = brushSizeTuple.getFirst();
 		brushSizeHider = brushSizeTuple.getSecond();
 
-
-		onlyUpdateLandCheckbox = new JCheckBox("Only update existing land");
-		onlyUpdateLandCheckbox.setToolTipText("Causes the paint region brush to not create new land in the ocean.");
+		onlyUpdateLandCheckbox = new JCheckBox("仅更新现有土地");
+		onlyUpdateLandCheckbox.setToolTipText("使绘制区域画笔在海洋中不创建新土地。");
+		
 		onlyUpdateLandCheckboxHider = organizer.addLabelAndComponent("", "", onlyUpdateLandCheckbox);
 
 
@@ -279,20 +280,20 @@ public class LandWaterTool extends EditorTool
 
 
 		baseColorPanel = SwingHelper.createColorPickerPreviewPanel();
-		final JButton baseColorChooseButton = new JButton("Choose");
+		final JButton baseColorChooseButton = new JButton("选择");
 		baseColorChooseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
-				SwingHelper.showColorPicker(toolOptionsPanel, baseColorPanel, "Base Color", () ->
+				SwingHelper.showColorPicker(toolOptionsPanel, baseColorPanel, "基础颜色", () ->
 				{
 				});
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("Base color:",
-				"The base color for generating new region colors. This is the map's land color when not coloring regions.",
+		organizer.addLabelAndComponentsHorizontal("基础颜色:",
+				"用于生成新区域颜色的基础颜色。当不着色区域时，这是地图的土地颜色。",
 				Arrays.asList(baseColorPanel, baseColorChooseButton), SwingHelper.borderWidthBetweenComponents);
-
+		
 
 		hueSlider = new JSlider();
 		hueSlider.setPaintTicks(true);
@@ -300,32 +301,31 @@ public class LandWaterTool extends EditorTool
 		hueSlider.setMinorTickSpacing(20);
 		hueSlider.setMajorTickSpacing(100);
 		hueSlider.setMaximum(360);
-		organizer.addLabelAndComponent("Hue range:",
-				"The possible range of hue values for generated region colors. The range is centered at the base color hue.", hueSlider);
-
-
+		organizer.addLabelAndComponent("色调范围:",
+				"生成区域颜色的色调值的可能范围。该范围以基础颜色的色调为中心。", hueSlider);
+		
 		saturationSlider = new JSlider();
 		saturationSlider.setPaintTicks(true);
 		saturationSlider.setPaintLabels(true);
 		saturationSlider.setMinorTickSpacing(20);
 		saturationSlider.setMaximum(255);
 		saturationSlider.setMajorTickSpacing(100);
-		organizer.addLabelAndComponent("Saturation range:",
-				"The possible range of saturation values for generated region colors. The range is centered at the land color saturation.",
+		organizer.addLabelAndComponent("饱和度范围:",
+				"生成区域颜色的饱和度值的可能范围。该范围以土地颜色的饱和度为中心。",
 				saturationSlider);
-
-
+		
 		brightnessSlider = new JSlider();
 		brightnessSlider.setPaintTicks(true);
 		brightnessSlider.setPaintLabels(true);
 		brightnessSlider.setMinorTickSpacing(20);
 		brightnessSlider.setMaximum(255);
 		brightnessSlider.setMajorTickSpacing(100);
-		organizer.addLabelAndComponent("Brightness range:",
-				"The possible range of brightness values for generated region colors. The range is centered at the land color brightness.",
+		organizer.addLabelAndComponent("亮度范围:",
+				"生成区域颜色的亮度值的可能范围。该范围以土地颜色的亮度为中心。",
 				brightnessSlider);
-
+		
 		return organizer.panel;
+				
 	}
 
 	private void showOrHideRegionColoringOptions()
@@ -641,7 +641,7 @@ public class LandWaterTool extends EditorTool
 
 			if (DebugFlags.printRiverEdgeIndexes())
 			{
-				System.out.println("River edge indexes:");
+				System.out.println("河流边缘索引：");
 				for (Edge edge : river)
 				{
 					System.out.println(edge.index);
@@ -681,7 +681,7 @@ public class LandWaterTool extends EditorTool
 
 			if (DebugFlags.printCenterIndexes())
 			{
-				System.out.println("Highlighted center indexes:");
+				System.out.println("突出显示中心索引：");
 				for (Center center : selected)
 				{
 					System.out.println(center.index);

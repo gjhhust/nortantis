@@ -58,54 +58,52 @@ public class CustomImagesDialog extends JDialog
 		GridBagOrganizer organizer = new GridBagOrganizer();
 		content.add(organizer.panel, BorderLayout.CENTER);
 		organizer.addLeftAlignedComponent(new JLabel(
-				"<html>A custom images folder allows you to use your own images instead of Nortantis's built-in images for a map."
-						+ " To do so, enter a path to a "
-						+ "folder with your images. If the folder is empty, Nortantis will copy its installed images into it as a "
-						+ "starting point. " + "The required folder structure is: </html>"),
+				"<html>自定义图片文件夹允许您使用自己的图片，而不是 Nortantis 内置的地图图片。"
+				+ " 为此，请输入包含您图片的文件夹路径。如果该文件夹为空，Nortantis 将把其安装的图片复制到该文件夹作为起点。"
+				+ " 所需的文件夹结构为： </html>"),
 				space, space, false);
 
 		int spaceBetweenPaths = 2;
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "borders" + File.separator
-				+ "<border type>" + File.separator + "<border images>"), space, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "cities"
-				+ File.separator + "<city type>" + File.separator + "<city images>"), spaceBetweenPaths, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "decorations"
-				+ File.separator + "<decoration type>" + File.separator + "<decoration images>"), spaceBetweenPaths, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "hills"
-				+ File.separator + "<hill type>" + File.separator + "<hill images>"), spaceBetweenPaths, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "mountains"
-				+ File.separator + "<mountain type>" + File.separator + "<mountain images>"), spaceBetweenPaths, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "sand"
-				+ File.separator + "<dune type>" + File.separator + "<sand dune images>"), spaceBetweenPaths, spaceBetweenPaths, false);
-		organizer.addLeftAlignedComponent(new JLabel("<custom images folder>" + File.separator + "trees"
-				+ File.separator + "<tree type>" + File.separator + "<tree images>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "边框" + File.separator
+				+ "<边框类型>" + File.separator + "<边框图片>"), space, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "城市"
+				+ File.separator + "<城市类型>" + File.separator + "<城市图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "装饰"
+				+ File.separator + "<装饰类型>" + File.separator + "<装饰图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "山丘"
+				+ File.separator + "<山丘类型>" + File.separator + "<山丘图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "山脉"
+				+ File.separator + "<山脉类型>" + File.separator + "<山脉图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "沙子"
+				+ File.separator + "<沙丘类型>" + File.separator + "<沙丘图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
+		organizer.addLeftAlignedComponent(new JLabel("<自定义图片文件夹>" + File.separator + "树木"
+				+ File.separator + "<树木类型>" + File.separator + "<树木图片>"), spaceBetweenPaths, spaceBetweenPaths, false);
 
-		organizer.addLeftAlignedComponent(new JLabel("<html>The names above in angle brackets are folder and file names"
-				+ " that you can configure to be whatever name you want. Folder names without angle brackets, however, must be exactly as described above or else Nortantis"
-				+ " will ignore those folders. Images must be either PNG or" + " JPG format. PNG is recommended because it"
-				+ " supports transparency and isn't lossy.</html>"), space, space, false);
-		organizer.addLeftAlignedComponent(new JLabel("<html>Valid border image names are 'upper_left_corner', 'upper_right_corner', "
-				+ "'lower_left_corner', 'lower_right_corner', 'top_edge', 'bottom_edge', 'left_edge', 'right_edge'. At least one corner and"
-				+ " one edge must be given. If corners are wider than the sides of edges, the corners will be inset into the map.</html>"),
+		organizer.addLeftAlignedComponent(new JLabel("<html>上述角括号中的名称是您可以配置为任何您想要的文件夹和文件名称。"
+				+ " 但是没有角括号的文件夹名称必须与上述描述完全相同，否则 Nortantis 将忽略这些文件夹。"
+				+ " 图片必须是 PNG 或 JPG 格式。推荐使用 PNG，因为它支持透明度且不会失真。</html>"), space, space, false);
+		organizer.addLeftAlignedComponent(new JLabel("<html>有效的边框图片名称为 'upper_left_corner'、'upper_right_corner'、"
+				+ "'lower_left_corner'、'lower_right_corner'、'top_edge'、'bottom_edge'、'left_edge'、'right_edge'。"
+				+ " 至少必须提供一个角落和一个边缘。如果角落的宽度大于边缘的宽度，角落将被嵌入到地图中。</html>"),
 				space, space, false);
 
-		organizer.addLeftAlignedComponent(new JLabel("<html>Regarding tree images, although the &lt;tree type&gt; folder can have any name,"
-				+ " if you want new maps to use your tree type appropriately for the biomes the trees are placed in, then use folder names including the words 'cacti', 'deciduous',"
-				+ " and 'pine'.</html>"), space, space, false);
+		organizer.addLeftAlignedComponent(new JLabel("<html>关于树木图片，尽管 <树木类型> 文件夹可以有任何名称，"
+				+ " 如果您希望新地图根据树木放置的生物群落适当地使用您的树木类型，请使用包含 'cacti'、'deciduous' 和 'pine' 的文件夹名称。</html>"), 
+				space, space, false);
 
 		organizer.addLeftAlignedComponent(new JLabel(
-				"<html>If you want new maps to add hills around mountains, then for each mountain type, create a hill type with the same name.</html>"),
+				"<html>如果您希望新地图在山脉周围添加山丘，则对于每种山脉类型，创建一个具有相同名称的山丘类型。</html>"),
 				space, space, false);
 
-		organizer
-				.addLeftAlignedComponent(new JLabel("<html>After making changes to custom images, to get Nortantis to see those changes you"
-						+ " can either close and re-open Nortantis or use " + mainWindow.getFileMenuName() + " -> "
-						+ mainWindow.getRefreshImagesMenuName() + ".</html>"), space, space, false);
+		organizer.addLeftAlignedComponent(new JLabel("<html>在对自定义图片进行更改后，要使 Nortantis 看到这些更改，您"
+				+ " 可以选择关闭并重新打开 Nortantis，或使用 " + mainWindow.getFileMenuName() + " -> "
+				+ mainWindow.getRefreshImagesMenuName() + "。</html>"), space, space, false);
 		organizer.addLeftAlignedComponent(
-				new JLabel("<html>To revert back to using Nortantis's installed images, clear out the" + " field below.</html>"), space, 10,
+				new JLabel("<html>要恢复使用 Nortantis 的已安装图片，请清空下面的字段。</html>"), space, 10,
 				false);
 
-		JButton openButton = new JButton("Open");
+		JButton openButton = new JButton("打开");  // 汉化按钮文本
+
 
 		customImagesFolderField = new JTextField();
 		customImagesFolderField.getDocument().addDocumentListener(new DocumentListener()
@@ -130,7 +128,7 @@ public class CustomImagesDialog extends JDialog
 			}
 		});
 		customImagesFolderField.setText(FileHelper.replaceHomeFolderPlaceholder(currentCustomImagesPath));
-		JButton browseButton = new JButton("Browse");
+		JButton browseButton = new JButton("浏览");
 		browseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -141,7 +139,7 @@ public class CustomImagesDialog extends JDialog
 					folder = FileSystemView.getFileSystemView().getDefaultDirectory();
 				}
 				JFileChooser folderChooser = new JFileChooser(folder);
-				folderChooser.setDialogTitle("Select a Folder");
+				folderChooser.setDialogTitle("选择文件夹");
 				folderChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
 				int returnValue = folderChooser.showOpenDialog(null);
@@ -160,14 +158,14 @@ public class CustomImagesDialog extends JDialog
 				File folder = new File(customImagesFolderField.getText());
 				if (!folder.exists())
 				{
-					JOptionPane.showMessageDialog(null, "Unable to open " + folder.getAbsolutePath() + ". The folder does not exist.",
+					JOptionPane.showMessageDialog(null, "无法打开" + folder.getAbsolutePath() + ". 文件夹不存在",
 							"Error", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
 				if (!folder.isDirectory())
 				{
 					JOptionPane.showMessageDialog(null,
-							"Unable to open " + folder.getAbsolutePath() + ". That path is a file, not a folder.", "Error",
+							"无法打开 " + folder.getAbsolutePath() + ". 该路径是一个文件，而不是文件夹.", "Error",
 							JOptionPane.ERROR_MESSAGE);
 					return;
 				}

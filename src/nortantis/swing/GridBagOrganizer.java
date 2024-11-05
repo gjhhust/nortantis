@@ -334,7 +334,7 @@ public class GridBagOrganizer
 		displayHolder.add(fontDisplay);
 		displayHolder.setPreferredSize(new Dimension(displayHolder.getPreferredSize().width, height));
 
-		final JButton chooseButton = new JButton("Choose");
+		final JButton chooseButton = new JButton("选择");
 		chooseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)

@@ -67,7 +67,7 @@ public class ToolsPanel extends JPanel
 		JPanel toolSelectPanel = new JPanel(new FlowLayout());
 		toolSelectPanel.setMaximumSize(new Dimension(toolSelectPanel.getMaximumSize().width, 20));
 		toolSelectPanel
-				.setBorder(BorderFactory.createTitledBorder(new LineBorder(UIManager.getColor("controlShadow"), 1), "Editing Tools"));
+				.setBorder(BorderFactory.createTitledBorder(new LineBorder(UIManager.getColor("controlShadow"), 1), "编辑工具"));
 		add(toolSelectPanel);
 		for (EditorTool tool : tools)
 		{
@@ -79,7 +79,7 @@ public class ToolsPanel extends JPanel
 			catch (Exception e)
 			{
 				e.printStackTrace();
-				Logger.printError("Error while setting an image for a tool: ", e);
+				Logger.printError("为工具设置图像时出错: ", e);
 			}
 			toolButton.setToolTipText(tool.getToolbarName());
 			toolButton.setMaximumSize(new Dimension(50, 50));
@@ -103,7 +103,7 @@ public class ToolsPanel extends JPanel
 
 		add(toolsOptionsPanelContainer);
 		toolOptionsPanelBorder = BorderFactory.createTitledBorder(new LineBorder(UIManager.getColor("controlShadow"), 1),
-				currentTool.getToolbarName() + " Options");
+				currentTool.getToolbarName() + " 选项");
 		toolsOptionsPanelContainer.setBorder(toolOptionsPanelBorder);
 
 		JPanel progressAndBottomPanel = new JPanel();
@@ -115,7 +115,7 @@ public class ToolsPanel extends JPanel
 				SwingHelper.borderWidthBetweenComponents));
 		progressBar = new JProgressBar();
 		progressBar.setStringPainted(true);
-		progressBar.setString("Drawing...");
+		progressBar.setString("绘制...");
 		progressBar.setIndeterminate(true);
 		progressBar.setVisible(false);
 		progressBarPanel.add(progressBar);
@@ -128,9 +128,9 @@ public class ToolsPanel extends JPanel
 				BorderFactory.createEmptyBorder(SwingHelper.borderWidthBetweenComponents, SwingHelper.borderWidthBetweenComponents,
 						SwingHelper.borderWidthBetweenComponents, SwingHelper.borderWidthBetweenComponents));
 
-		JLabel lblZoom = new JLabel("Zoom");
-		lblZoom.setToolTipText("Zoom the map in or out (mouse wheel). To view more details at higher zoom levels,"
-				+ " adjust the 'Display quality'.");
+		JLabel lblZoom = new JLabel("缩放");  // "Zoom"翻译为"缩放"
+		lblZoom.setToolTipText("缩放地图以查看更详细的信息（鼠标滚轮）。要在更高的缩放级别查看更多细节，"
+				+ " 请调整 '显示质量'。");  // 汉化工具提示
 
 		zoomLevels = Arrays.asList(new String[] { fitToWindowZoomLevel, "50%", "75%", "100%", "150%", "200%", "275%" });
 		zoomComboBox = new JComboBoxFixed<>();
@@ -155,9 +155,9 @@ public class ToolsPanel extends JPanel
 		//bottomPanel.add(Box.createHorizontalGlue());
 		bottomPanel.add(Box.createRigidArea(new Dimension(12, 4)));
 
-		JLabel lblDisplayQuality = new JLabel("Display Quality");
-		lblDisplayQuality.setToolTipText("Change the quality of the map displayed in the editor. Does not apply when exporting the map to an image. Higher values make the editor slower.");
-
+		JLabel lblDisplayQuality = new JLabel("显示质量");  // "Display Quality"翻译为"显示质量"
+		lblDisplayQuality.setToolTipText("更改编辑器中显示的地图质量。导出地图为图像时不适用。较高的值会使编辑器变慢。");  // 汉化工具提示
+		
 		displayQualityComboBox = new JComboBoxFixed<>();
 		for (DisplayQuality quality : DisplayQuality.values())
 		{
@@ -256,7 +256,7 @@ public class ToolsPanel extends JPanel
 		// I'm calling onSwitchingAway after setting currentTool because the place EditorTool.shouldShowTextWhenTextIsEnabled
 		// in MainWindow.createMapUpdater depends on it.
 		prevTool.onSwitchingAway();
-		toolOptionsPanelBorder.setTitle(currentTool.getToolbarName() + " Options");
+		toolOptionsPanelBorder.setTitle(currentTool.getToolbarName() + " 选项");
 		currentToolOptionsPanel = currentTool.getToolOptionsPanel();
 		toolsOptionsPanelContainer.setViewportView(currentToolOptionsPanel);
 		toolsOptionsPanelContainer.revalidate();

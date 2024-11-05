@@ -33,7 +33,7 @@ public class NameGeneratorDialog extends JDialog
 
 	public NameGeneratorDialog(MainWindow mainWindow, MapSettings settings)
 	{
-		super(mainWindow, "Name Generator", Dialog.ModalityType.APPLICATION_MODAL);
+		super(mainWindow, "名称生成器", Dialog.ModalityType.APPLICATION_MODAL);
 		setSize(new Dimension(500, 810));
 
 		JPanel contents = new JPanel();
@@ -43,30 +43,30 @@ public class NameGeneratorDialog extends JDialog
 		GridBagOrganizer organizer = new GridBagOrganizer();
 		contents.add(organizer.panel, BorderLayout.CENTER);
 		ButtonGroup buttonGroup = new ButtonGroup();
-		JRadioButton personNameRadioButton = new JRadioButton("Person");
+		JRadioButton personNameRadioButton = new JRadioButton("人名");
 		buttonGroup.add(personNameRadioButton);
-		JRadioButton placeNameRadioButton = new JRadioButton("Place");
+		JRadioButton placeNameRadioButton = new JRadioButton("地名");
 		buttonGroup.add(placeNameRadioButton);
-		organizer.addLabelAndComponentsHorizontal("Name type:", "", Arrays.asList(personNameRadioButton, placeNameRadioButton));
+		organizer.addLabelAndComponentsHorizontal("名称类型:", "", Arrays.asList(personNameRadioButton, placeNameRadioButton));
 
-		final String beginsWithLabel = "Begins with:";
+		final String beginsWithLabel = "以...开始:";
 		JTextField beginsWith = new JTextField();
-		organizer.addLabelAndComponent(beginsWithLabel, "Constrains generated names to start with the given letters.", beginsWith);
+		organizer.addLabelAndComponent(beginsWithLabel, "限制生成的名称以给定字母开头。", beginsWith);
 
-		final String endsWithLabel = "Ends with:";
+		final String endsWithLabel = "以...结束:";
 		JTextField endsWith = new JTextField();
-		organizer.addLabelAndComponent(endsWithLabel, "Constraints generated names to end with these letters.", endsWith, 0);
+		organizer.addLabelAndComponent(endsWithLabel, "限制生成的名称以这些字母结尾。", endsWith, 0);
 
 		personNameRadioButton.setSelected(true);
 
 		BooksWidget booksWidget = new BooksWidget(true, null);
 		booksWidget.checkSelectedBooks(settings.books);
-		organizer.addLeftAlignedComponentWithStackedLabel("Books for generating names:", "Selected books will be used to generate names.",
+		organizer.addLeftAlignedComponentWithStackedLabel("用于生成名称的书籍:", "选择的书籍将用于生成名称。",
 				booksWidget.getContentPanel(), GridBagOrganizer.rowVerticalInset, 2, true, 0.2);
 
 		JPanel generatePanel = new JPanel();
 		generatePanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-		JButton generateButton = new JButton("<html><u>G</u>enerate Names<html>");
+		JButton generateButton = new JButton("<html><u>生</u>成名称<html>"); // 生成按钮
 		generatePanel.add(generateButton);
 		generateButton.setMnemonic(KeyEvent.VK_G);
 		organizer.addLeftAlignedComponent(generatePanel, 0, 0, false);
@@ -78,9 +78,9 @@ public class NameGeneratorDialog extends JDialog
 				if (!beginsWith.getText().chars().allMatch(Character::isLetter)
 						|| !endsWith.getText().chars().allMatch(Character::isLetter))
 				{
-					String message = beginsWithLabel.replace(":", "") + " and " + endsWithLabel.replace(":", "")
-							+ " must contain only letters.";
-					JOptionPane.showMessageDialog(NameGeneratorDialog.this, message, "Error", JOptionPane.ERROR_MESSAGE);
+					String message = beginsWithLabel.replace(":", "") + " 和 " + endsWithLabel.replace(":", "")
+							+ " 必须只包含字母。";
+					JOptionPane.showMessageDialog(NameGeneratorDialog.this, message, "错误", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
 
@@ -96,7 +96,7 @@ public class NameGeneratorDialog extends JDialog
 
 		textBox = new JTextArea(numberToGenerate, 30);
 		JScrollPane textBoxScrollPane = new JScrollPane(textBox);
-		organizer.addLeftAlignedComponentWithStackedLabel("Generated names:", "", textBoxScrollPane, true, 0.8);
+		organizer.addLeftAlignedComponentWithStackedLabel("生成的名称:", "", textBoxScrollPane, true, 0.8);
 
 		JPanel bottomButtonsPanel = new JPanel();
 		contents.add(bottomButtonsPanel, BorderLayout.SOUTH);
@@ -124,7 +124,7 @@ public class NameGeneratorDialog extends JDialog
 		final int maxAttempts = 100000;
 		String names = "";
 
-		for (@SuppressWarnings("unused")
+		for (@SuppressWarnings("闲置")
 		int i : new Range(numberToGenerate))
 		{
 			String name = "";
@@ -154,17 +154,18 @@ public class NameGeneratorDialog extends JDialog
 					if (requiredSuffix.length() > 0)
 					{
 						return names + (names.isEmpty() ? "" : "\n")
-								+ "Error: Unable to generate enough names with the given books and requested suffix. "
-								+ "Try either adding more books or removing or reducing the suffix.";
+								+ "错误：无法使用给定的书籍和请求的后缀生成足够的名称。"
+								+ "请尝试添加更多书籍或移除或减少后缀。";
 					}
 					else if (requiredPrefix.length() > 0)
 					{
 						return names + (names.isEmpty() ? "" : "\n")
-								+ "Error: Unable to generate enough names with the given books and required prefix. "
-								+ "Try including more books or removing or reducing the prefix.";
+								+ "错误：无法使用给定的书籍和要求的前缀生成足够的名称。"
+								+ "请尝试包含更多书籍或移除或减少前缀。";
 					}
-					return names + (names.isEmpty() ? "" : "\n") + "Error: Unable to generate enough names. Try including more books.";
+					return names + (names.isEmpty() ? "" : "\n") + "错误：无法生成足够的名称。请尝试包含更多书籍。";
 				}
+
 				catch (Exception ex)
 				{
 					return names + (names.isEmpty() ? "" : "\n") + "Error: " + ex.getMessage();
@@ -173,8 +174,8 @@ public class NameGeneratorDialog extends JDialog
 				attemptCount++;
 				if (attemptCount >= maxAttempts)
 				{
-					return names + (names.isEmpty() ? "" : "\n") + "Unable to generate enough names with the given contraints. "
-							+ "Try using more books or reducing the suffix.";
+					return names + (names.isEmpty() ? "" : "\n") + "无法根据给定的限制条件生成足够的名称。"
+							+ "尝试使用更多的书籍或减少后缀。";
 				}
 			}
 			names = names + (names.isEmpty() ? "" : "\n") + name;

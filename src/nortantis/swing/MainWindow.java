@@ -163,12 +163,12 @@ public class MainWindow extends JFrame implements ILoggerTarget
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			Logger.printError("Error while opening map passed in on the command line:", e);
+			Logger.printError("打开从命令行传入的地图时出错:", e);
 		}
 
 		if (!isMapOpen)
 		{
-			setPlaceholderImage(new String[] { "Welcome to Nortantis. To create or open a map,", "use the File menu." });
+			setPlaceholderImage(new String[] { "Welcome to Notantis. Create or open a map.", "Use the File menu." });
 			enableOrDisableFieldsThatRequireMap(false, null);
 		}
 	}
@@ -477,7 +477,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 				if (warningMessages != null && warningMessages.size() > 0)
 				{
 					JOptionPane.showMessageDialog(MainWindow.this, "<html>" + String.join("<br>", warningMessages) + "</html>",
-							"Map Drew With Warnings", JOptionPane.WARNING_MESSAGE);
+							"带警告的地图", JOptionPane.WARNING_MESSAGE);
 				}
 
 				boolean isChange = settingsHaveUnsavedChanges();
@@ -489,8 +489,8 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			{
 				showAsDrawing(false);
 				mapEditingPanel.clearSelectedCenters();
-				setPlaceholderImage(new String[] { "Map failed to draw due to an error.",
-						"To retry, use " + fileMenu.getText() + " -> " + refreshMenuItem.getText() + "." });
+				setPlaceholderImage(new String[] { "由于错误，地图绘制失败.",
+						"重试, use " + fileMenu.getText() + " -> " + refreshMenuItem.getText() + "." });
 
 				// In theory, enabling fields now could lead to the undoer not
 				// working quite right since edits might not have been created.
@@ -533,10 +533,10 @@ public class MainWindow extends JFrame implements ILoggerTarget
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
-		fileMenu = new JMenu("File");
+		fileMenu = new JMenu("文件");
 		menuBar.add(fileMenu);
 
-		final JMenuItem newRandomMapMenuItem = new JMenuItem("New Random Map");
+		final JMenuItem newRandomMapMenuItem = new JMenuItem("新随机地图");
 		newRandomMapMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_DOWN_MASK));
 		fileMenu.add(newRandomMapMenuItem);
 		newRandomMapMenuItem.addActionListener(new ActionListener()
@@ -552,7 +552,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		newMapWithSameThemeMenuItem = new JMenuItem("New Map With Same Theme");
+		newMapWithSameThemeMenuItem = new JMenuItem("主题不变的新地图");
 		fileMenu.add(newMapWithSameThemeMenuItem);
 		newMapWithSameThemeMenuItem.addActionListener(new ActionListener()
 		{
@@ -569,14 +569,13 @@ public class MainWindow extends JFrame implements ILoggerTarget
 							&& !UserPreferences.getInstance().hideNewMapWithSameThemeRegionColorsMessage)
 					{
 						UserPreferences.getInstance().hideNewMapWithSameThemeRegionColorsMessage = SwingHelper.showDismissibleMessage(
-								"Region Colors",
-								"New region colors will be generated based on the " + LandWaterTool.colorGeneratorSettingsName + " in the "
-										+ LandWaterTool.toolbarName + " tool"
-										+ ", not the actual colors used in your current map. This means that if you chose your region colors"
-										+ " by hand rather than generating them, the region colors in your new map may look substantially different"
-										+ " than those in your current map.",
-								new Dimension(400, 133), MainWindow.this);
+							"区域颜色",  // "Region Colors"翻译为"区域颜色"
+							"新的区域颜色将根据 " + LandWaterTool.colorGeneratorSettingsName + " 在 "  // 翻译的内容
+							+ LandWaterTool.toolbarName + " 工具中生成，而不是根据你当前地图中实际使用的颜色。这意味着，如果你手动选择了区域颜色"  // 翻译的内容
+							+ " 而不是生成的，那么你新地图中的区域颜色可能与当前地图中的颜色有很大不同。",  // 翻译的内容
+							new Dimension(400, 133), MainWindow.this);
 					}
+							
 
 					launchNewSettingsDialog(settingsToKeepThemeFrom);
 				}
@@ -622,24 +621,27 @@ public class MainWindow extends JFrame implements ILoggerTarget
 
 					if (MapSettings.isOldPropertiesFile(openSettingsFilePath.toString()))
 					{
-						JOptionPane.showMessageDialog(MainWindow.this, FilenameUtils.getName(openSettingsFilePath.toString())
-								+ " is an older format '.properties' file. \nWhen you save, it will be converted to the newer format, a '"
-								+ MapSettings.fileExtensionWithDot + "' file.", "File Converted", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(MainWindow.this, 
+							FilenameUtils.getName(openSettingsFilePath.toString())
+							+ " 是较旧格式的 '.properties' 文件。 \n保存时，它将被转换为较新格式，即 '"
+							+ MapSettings.fileExtensionWithDot + "' 文件。", 
+							"文件转换", 
+							JOptionPane.INFORMATION_MESSAGE);
 						openSettingsFilePath = Paths.get(FilenameUtils.getFullPath(openSettingsFilePath.toString()),
-								FilenameUtils.getBaseName(openSettingsFilePath.toString()) + MapSettings.fileExtensionWithDot);
+							FilenameUtils.getBaseName(openSettingsFilePath.toString()) + MapSettings.fileExtensionWithDot);
 						forceSaveAs = true;
-					}
+					}					
 
 				}
 
 			}
 		});
 
-		recentSettingsMenuItem = new JMenu("Open Recent");
+		recentSettingsMenuItem = new JMenu("打开 最近");
 		fileMenu.add(recentSettingsMenuItem);
 		createOrUpdateRecentMapMenuButtons();
 
-		saveMenuItem = new JMenuItem("Save");
+		saveMenuItem = new JMenuItem("节省");
 		saveMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK));
 		fileMenu.add(saveMenuItem);
 		saveMenuItem.addActionListener(new ActionListener()
@@ -651,7 +653,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		saveAsMenItem = new JMenuItem("Save As...");
+		saveAsMenItem = new JMenuItem("另存为...");
 		fileMenu.add(saveAsMenItem);
 		saveAsMenItem.addActionListener(new ActionListener()
 		{
@@ -662,7 +664,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		exportMapAsImageMenuItem = new JMenuItem("Export as Image");
+		exportMapAsImageMenuItem = new JMenuItem("导出为图像");
 		fileMenu.add(exportMapAsImageMenuItem);
 		exportMapAsImageMenuItem.addActionListener(new ActionListener()
 		{
@@ -673,7 +675,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		exportHeightmapMenuItem = new JMenuItem("Export Heightmap");
+		exportHeightmapMenuItem = new JMenuItem("导出高度图");
 		fileMenu.add(exportHeightmapMenuItem);
 		exportHeightmapMenuItem.addActionListener(new ActionListener()
 		{
@@ -684,7 +686,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		refreshMenuItem = new JMenuItem("Refresh Images and Redraw");
+		refreshMenuItem = new JMenuItem("刷新图像并重新绘制");
 		refreshMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, KeyEvent.CTRL_DOWN_MASK));
 		fileMenu.add(refreshMenuItem);
 		refreshMenuItem.addActionListener(new ActionListener()
@@ -697,10 +699,10 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		editMenu = new JMenu("Edit");
+		editMenu = new JMenu("编辑");
 		menuBar.add(editMenu);
 
-		undoButton = new JMenuItem("Undo");
+		undoButton = new JMenuItem("撤消");
 		undoButton.setEnabled(false);
 		editMenu.add(undoButton);
 		undoButton.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Z, KeyEvent.CTRL_DOWN_MASK));
@@ -719,7 +721,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		redoButton = new JMenuItem("Redo");
+		redoButton = new JMenuItem("重做");
 		redoButton.setEnabled(false);
 		editMenu.add(redoButton);
 		redoButton.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, ActionEvent.CTRL_MASK | ActionEvent.SHIFT_MASK));
@@ -738,7 +740,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		clearEntireMapButton = new JMenuItem("Clear Entire Map");
+		clearEntireMapButton = new JMenuItem("清除整个地图");
 		editMenu.add(clearEntireMapButton);
 		clearEntireMapButton.addActionListener(new ActionListener()
 		{
@@ -750,7 +752,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 		});
 		clearEntireMapButton.setEnabled(false);
 
-		customImagesMenuItem = new JMenuItem("Custom Images Folder");
+		customImagesMenuItem = new JMenuItem("自定义图片文件夹");
 		editMenu.add(customImagesMenuItem);
 		customImagesMenuItem.addActionListener(new ActionListener()
 		{
@@ -761,11 +763,11 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 
-		viewMenu = new JMenu("View");
+		viewMenu = new JMenu("查看");
 		menuBar.add(viewMenu);
 
-		highlightLakesButton = new JCheckBoxMenuItem("Highlight Lakes");
-		highlightLakesButton.setToolTipText("Highlight lakes to make them easier to see.");
+		highlightLakesButton = new JCheckBoxMenuItem("突出显示湖泊");  // "Highlight Lakes"翻译为"突出显示湖泊"
+		highlightLakesButton.setToolTipText("突出显示湖泊以使其更容易看到。");  // 汉化工具提示
 		highlightLakesButton.addActionListener(new ActionListener()
 		{
 			@Override
@@ -776,9 +778,9 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 		viewMenu.add(highlightLakesButton);
-
-		highlightRiversButton = new JCheckBoxMenuItem("Highlight Rivers");
-		highlightRiversButton.setToolTipText("Highlight rivers to make them easier to see.");
+		
+		highlightRiversButton = new JCheckBoxMenuItem("突出显示河流");  // "Highlight Rivers"翻译为"突出显示河流"
+		highlightRiversButton.setToolTipText("突出显示河流以使其更容易看到。");  // 汉化工具提示
 		highlightRiversButton.addActionListener(new ActionListener()
 		{
 			@Override
@@ -789,11 +791,11 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			}
 		});
 		viewMenu.add(highlightRiversButton);
-
-		toolsMenu = new JMenu("Tools");
+		
+		toolsMenu = new JMenu("工具");  // "Tools"翻译为"工具"
 		menuBar.add(toolsMenu);
-
-		nameGeneratorMenuItem = new JMenuItem("Name Generator");
+		
+		nameGeneratorMenuItem = new JMenuItem("名称生成器");  // "Name Generator"翻译为"名称生成器"
 		toolsMenu.add(nameGeneratorMenuItem);
 		nameGeneratorMenuItem.addActionListener(new ActionListener()
 		{
@@ -803,8 +805,8 @@ public class MainWindow extends JFrame implements ILoggerTarget
 				handleNameGeneratorPressed();
 			}
 		});
-
-		searchTextMenuItem = new JMenuItem("Search Text");
+		
+		searchTextMenuItem = new JMenuItem("搜索文本");  // "Search Text"翻译为"搜索文本"
 		searchTextMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, KeyEvent.CTRL_DOWN_MASK));
 		toolsMenu.add(searchTextMenuItem);
 		searchTextMenuItem.addActionListener(new ActionListener()
@@ -815,11 +817,11 @@ public class MainWindow extends JFrame implements ILoggerTarget
 				handleSearchTextPressed();
 			}
 		});
-
-		helpMenu = new JMenu("Help");
+		
+		helpMenu = new JMenu("帮助");  // "Help"翻译为"帮助"
 		menuBar.add(helpMenu);
-
-		JMenuItem keyboardShortcutsItem = new JMenuItem("Keyboard Shortcuts");
+		
+		JMenuItem keyboardShortcutsItem = new JMenuItem("键盘快捷键");  // "Keyboard Shortcuts"翻译为"键盘快捷键"
 		helpMenu.add(keyboardShortcutsItem);
 		keyboardShortcutsItem.addActionListener(new ActionListener()
 		{
@@ -827,13 +829,13 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			public void actionPerformed(ActionEvent e)
 			{
 				JOptionPane.showMessageDialog(MainWindow.this,
-						"<html>Keyboard shortcuts for navigating the map:" + "<ul>" + "<li>Zoom: Mouse wheel</li>"
-								+ "<li>Pan: Hold mouse middle button or CTRL and mouse left click, then drag</li>" + "</ul>" + "</html>",
-						"Keyboard Shortcuts", JOptionPane.INFORMATION_MESSAGE);
+					"<html>用于导航地图的键盘快捷键：" + "<ul>" + "<li>缩放：鼠标滚轮</li>"
+					+ "<li>平移：按住鼠标中键或CTRL并单击鼠标左键，然后拖动</li>" + "</ul>" + "</html>",
+					"键盘快捷键", JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
-
-		JMenuItem aboutNortantisItem = new JMenuItem("About Nortantis");
+		
+		JMenuItem aboutNortantisItem = new JMenuItem("关于Nortantis");  // "About Nortantis"翻译为"关于Nortantis"
 		helpMenu.add(aboutNortantisItem);
 		aboutNortantisItem.addActionListener(new ActionListener()
 		{
@@ -843,7 +845,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 				showAboutNortantisDialog();
 			}
 		});
-	}
+	}		
 
 	void handleImagesRefresh()
 	{
@@ -899,10 +901,10 @@ public class MainWindow extends JFrame implements ILoggerTarget
 	{
 		if (!(new File(absolutePath).exists()))
 		{
-			JOptionPane.showMessageDialog(null, "The map '" + absolutePath + "' cannot be opened because it does not exist.",
-					"Unable to Open Map", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "地图 '" + absolutePath + "' 无法打开，因为它不存在。",
+					"无法打开地图", JOptionPane.ERROR_MESSAGE);
 			return;
-		}
+		}		
 
 		try
 		{
@@ -926,9 +928,9 @@ public class MainWindow extends JFrame implements ILoggerTarget
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "Error while opening '" + absolutePath + "': " + e.getMessage(), "Error While Opening Map",
-					JOptionPane.ERROR_MESSAGE);
-			Logger.printError("Unable to open '" + absolutePath + "' due to an error:", e);
+			JOptionPane.showMessageDialog(null, "打开 '" + absolutePath + "' 时出错: " + e.getMessage(), 
+					"打开地图时出错", JOptionPane.ERROR_MESSAGE);
+			Logger.printError("由于错误，无法打开 '" + absolutePath + "' :", e);
 		}
 	}
 
@@ -939,19 +941,19 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			try
 			{
 				MapSettings.convertOldCustomImagesFolder(settings.customImagesPath);
-
-				JOptionPane.showMessageDialog(null, "Your custom images folder has been automatically converted to the new structure.",
-						"Custom Images Folder Converted", JOptionPane.INFORMATION_MESSAGE);
+	
+				JOptionPane.showMessageDialog(null, "您的自定义图像文件夹已自动转换为新结构。",
+						"自定义图像文件夹已转换", JOptionPane.INFORMATION_MESSAGE);
 			}
 			catch (IOException ex)
 			{
-				String errorMessage = "Error while restructuring custom images folder for " + settings.customImagesPath + ": "
+				String errorMessage = "重组自定义图像文件夹时出错，路径: " + settings.customImagesPath + ": "
 						+ ex.getMessage();
 				Logger.printError(errorMessage, ex);
-				JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, errorMessage, "错误", JOptionPane.ERROR_MESSAGE);
 			}
 		}
-	}
+	}	
 
 	public void handleMouseWheelChangingZoom(MouseWheelEvent e)
 	{
@@ -1352,8 +1354,8 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			catch (IOException e)
 			{
 				e.printStackTrace();
-				Logger.printError("Error while saving map.", e);
-				JOptionPane.showMessageDialog(null, e.getMessage(), "Unable to save settings.", JOptionPane.ERROR_MESSAGE);
+				Logger.printError("保存地图时出错。", e);
+				JOptionPane.showMessageDialog(null, e.getMessage(), "无法保存设置。", JOptionPane.ERROR_MESSAGE);
 			}
 			updateFrameTitle(false, true);
 		}
@@ -1406,8 +1408,8 @@ public class MainWindow extends JFrame implements ILoggerTarget
 			catch (IOException e)
 			{
 				e.printStackTrace();
-				Logger.printError("Erorr while saving settings to a new file:", e);
-				JOptionPane.showMessageDialog(null, e.getMessage(), "Unable to save settings.", JOptionPane.ERROR_MESSAGE);
+				Logger.printError("在将设置保存到新文件时发出错误提示：", e);
+				JOptionPane.showMessageDialog(null, e.getMessage(), "无法保存设置。", JOptionPane.ERROR_MESSAGE);
 			}
 
 			updateFrameTitle(false, true);
@@ -1417,7 +1419,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 	private void saveMap(MapSettings settings, String absolutePath) throws IOException
 	{
 		settings.writeToFile(absolutePath);
-		Logger.println("Settings saved to " + openSettingsFilePath.toString());
+		Logger.println("设置保存到 " + openSettingsFilePath.toString());
 		updateLastSettingsLoadedOrSaved(settings);
 		UserPreferences.getInstance().addRecentMapFilePath(absolutePath);
 		createOrUpdateRecentMapMenuButtons();
@@ -1653,7 +1655,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error while setting look and feel: " + e.getMessage());
+			System.out.println("在设置外观和感觉时出错： " + e.getMessage());
 			e.printStackTrace();
 		}
 
@@ -1669,7 +1671,7 @@ public class MainWindow extends JFrame implements ILoggerTarget
 				}
 				catch (Exception e)
 				{
-					System.out.println("Error while starting the program: " + e.getMessage());
+					System.out.println("启动程序时出错： " + e.getMessage());
 					e.printStackTrace();
 				}
 			}

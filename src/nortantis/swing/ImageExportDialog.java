@@ -65,7 +65,7 @@ public class ImageExportDialog extends JDialog
 
 	public ImageExportDialog(MainWindow mainWindow, ImageExportType type)
 	{
-		super(mainWindow, type == ImageExportType.Map ? "Export as Image" : "Export Heightmap", Dialog.ModalityType.APPLICATION_MODAL);
+		super(mainWindow, type == ImageExportType.Map ? "导出为图像" : "导出高度图", Dialog.ModalityType.APPLICATION_MODAL);
 		this.type = type;
 
 		setSize(new Dimension(460, type == ImageExportType.Map ? 293 : 380));
@@ -80,11 +80,10 @@ public class ImageExportDialog extends JDialog
 		if (type == ImageExportType.Heightmap)
 		{
 			organizer.addLeftAlignedComponent(
-					new JLabel("<html>This option exports a map's height data as a 16-bit grayscale image for use in"
-							+ " other applications such as creating a videogame world. Note that the heightmap will not"
-							+ " reflect changes made by editing brushes, such as adding or removing land or changing mountain placement.</html>"),
+					new JLabel("<html>此选项将地图的高度数据导出为16位灰度图像，以便在其他应用程序中使用，例如创建视频游戏世界。请注意，高度图将不会反映通过编辑画笔所做的更改，例如添加或移除土地或更改山脉位置。</html>"),
 					false);
 		}
+
 
 		resolutionSlider = new JSlider();
 		resolutionSlider.setPaintLabels(true);
@@ -108,13 +107,13 @@ public class ImageExportDialog extends JDialog
 			resolutionSlider.setLabelTable(labelTable);
 		}
 		String tooltip = type == ImageExportType.Map
-				? "This percentage is multiplied by the size of the map to determine "
-						+ "the resolution to draw at. The maximum allowed resolution is determined by the amount of memory on this device."
-				: "This percentage is multiplied by the dimensions of the map to determine the resolution to draw at. Higher resolutions"
-						+ " will give more detailed terrain.";
+				? "此百分比乘以地图的大小以确定绘制的分辨率。允许的最大分辨率由该设备的内存量决定。"
+				: "此百分比乘以地图的尺寸以确定绘制的分辨率。更高的分辨率将提供更详细的地形。";
+
 		resolutionSlider
 				.setValue((int) ((type == ImageExportType.Map ? mainWindow.exportResolution : mainWindow.heightmapExportResolution) * 100));
-		organizer.addLabelAndComponent("Resolution:", tooltip, resolutionSlider);
+		organizer.addLabelAndComponent("分辨率:", tooltip, resolutionSlider);
+
 
 		ActionListener radioButtonListener = new ActionListener()
 		{
@@ -126,17 +125,17 @@ public class ImageExportDialog extends JDialog
 			}
 		};
 
-		fileRadioButton = new JRadioButton("Save to file");
+		fileRadioButton = new JRadioButton("保存到文件");
 		fileRadioButton.addActionListener(radioButtonListener);
 
-		openInViewerRadioButton = new JRadioButton("Open with this device's default image viewer");
+		openInViewerRadioButton = new JRadioButton("使用该设备的默认图像查看器打开");
 		openInViewerRadioButton.addActionListener(radioButtonListener);
 
 		ButtonGroup buttonGroup = new ButtonGroup();
 		buttonGroup.add(fileRadioButton);
 		buttonGroup.add(openInViewerRadioButton);
 
-		organizer.addLabelAndComponentsVertical("Export action:", "Select what to do with the generated image.",
+		organizer.addLabelAndComponentsVertical("导出行动:", "选择如何处理生成的图像。",
 				Arrays.asList(fileRadioButton, openInViewerRadioButton));
 
 		JTextField pathField = new JTextField();
@@ -148,15 +147,15 @@ public class ImageExportDialog extends JDialog
 				if (curPath == null || curPath.isEmpty())
 				{
 					curPath = mainWindow.getOpenSettingsFilePath() == null
-							? Paths.get(FileSystemView.getFileSystemView().getDefaultDirectory().toPath().toString(), "unnamed").toString()
+							? Paths.get(FileSystemView.getFileSystemView().getDefaultDirectory().toPath().toString(), "未命名").toString()
 							: mainWindow.getOpenSettingsFilePath().toString();
 					String folder = new File(curPath).getParent();
 					String fileBaseName = FilenameUtils.getBaseName(curPath);
 					if (fileBaseName == null || fileBaseName.isEmpty())
 					{
-						fileBaseName = type == ImageExportType.Map ? "map" : "heightmap";
+						fileBaseName = type == ImageExportType.Map ? "地图" : "高度图";
 					}
-					Path fileSavePath = Paths.get(folder, fileBaseName + (type == ImageExportType.Map ? "" : " heightmap") + ".png")
+					Path fileSavePath = Paths.get(folder, fileBaseName + (type == ImageExportType.Map ? "" : " 高度图") + ".png")
 							.toAbsolutePath();
 					pathField.setText(fileSavePath.toString());
 				}
@@ -171,7 +170,7 @@ public class ImageExportDialog extends JDialog
 			}
 		}
 
-		JButton browseSavePathButton = new JButton("Browse");
+		JButton browseSavePathButton = new JButton("浏览");
 		browseSavePathButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -189,12 +188,12 @@ public class ImageExportDialog extends JDialog
 		pathPanel.add(browseSavePathButton);
 		pathPanel.add(Box.createHorizontalGlue());
 
-		pathChooserHider = organizer.addLabelAndComponentsVertical("Export file path:", "",
+		pathChooserHider = organizer.addLabelAndComponentsVertical("导出文件路径:", "",
 				Arrays.asList(pathField, Box.createVerticalStrut(5), pathPanel));
 
 		progressBar = new JProgressBar();
 		progressBar.setStringPainted(true);
-		progressBar.setString("Exporting...");
+		progressBar.setString("出口...");
 		progressBar.setIndeterminate(true);
 		progressBar.setVisible(false);
 		organizer.addVerticalFillerRow();
@@ -244,7 +243,7 @@ public class ImageExportDialog extends JDialog
 					{
 						if (pathField.getText() == null || pathField.getText().isEmpty())
 						{
-							JOptionPane.showMessageDialog(getContentPane(), "Export file path is required.", "Error",
+							JOptionPane.showMessageDialog(getContentPane(), "需要导出文件路径.", "Error",
 									JOptionPane.ERROR_MESSAGE);
 							return;
 						}
@@ -259,7 +258,7 @@ public class ImageExportDialog extends JDialog
 						}
 						else if (!allowedExtension.contains(extension.toLowerCase()))
 						{
-							JOptionPane.showMessageDialog(getContentPane(), "The export file must be a png or jpeg image.", "Error",
+							JOptionPane.showMessageDialog(getContentPane(), "导出文件必须是 png 或 jpeg 图像.", "Error",
 									JOptionPane.ERROR_MESSAGE);
 							return;
 						}
@@ -267,21 +266,21 @@ public class ImageExportDialog extends JDialog
 						if (new File(exportPath).isDirectory())
 						{
 							JOptionPane.showMessageDialog(getContentPane(),
-									"There is a directory with the same name as the export file, in the same folder.", "Error",
+									"在同一文件夹中有一个与导出文件同名的目录.", "Error",
 									JOptionPane.ERROR_MESSAGE);
 							return;
 						}
 
 						if (!new File(new File(exportPath).getParent()).exists())
 						{
-							JOptionPane.showMessageDialog(getContentPane(), "The export file folder does not exist.", "Error",
+							JOptionPane.showMessageDialog(getContentPane(), "导出文件文件夹不存在.", "Error",
 									JOptionPane.ERROR_MESSAGE);
 							return;
 						}
 					}
 					catch (InvalidPathException ex)
 					{
-						JOptionPane.showMessageDialog(getContentPane(), "The export file path is invalid.", "Error",
+						JOptionPane.showMessageDialog(getContentPane(), "导出文件路径无效。", "Error",
 								JOptionPane.ERROR_MESSAGE);
 						return;
 					}
@@ -416,13 +415,13 @@ public class ImageExportDialog extends JDialog
 					}
 					else
 					{
-						Logger.println("Creating heightmap...");
+						Logger.println("创建高度图...");
 						result = new MapCreator().createHeightMap(settings);
 					}
 				}
 				catch (CancelledException e)
 				{
-					Logger.println((type == ImageExportType.Map ? "Map" : "Heightmap") + " creation cancelled.");
+					Logger.println((type == ImageExportType.Map ? "地图" : "高度图") + " 取消创建.");
 					return null;
 				}
 
@@ -430,15 +429,15 @@ public class ImageExportDialog extends JDialog
 
 				if (isCanceled)
 				{
-					Logger.println((type == ImageExportType.Map ? "Map" : "Heightmap") + " creation cancelled.");
+					Logger.println((type == ImageExportType.Map ? "地图" : "高度图") + " creation cancelled.");
 					return null;
 				}
 
 				String fileName;
 				if (exportAction == ExportAction.OpenInDefaultImageViewer)
 				{
-					Logger.println("Opening the " + (type == ImageExportType.Map ? "map" : "heightmap")
-							+ " in your system's default image editor.");
+					Logger.println("打开 " + (type == ImageExportType.Map ? "地图" : "高度图")
+							+ " 在系统的默认图像编辑器中.");
 					fileName = ImageHelper.openImageInSystemDefaultEditor(result, "map_" + settings.randomSeed);
 				}
 				else
@@ -469,7 +468,7 @@ public class ImageExportDialog extends JDialog
 				{
 					progressBar.setVisible(false);
 					JOptionPane.showMessageDialog(getContentPane(),
-							(type == ImageExportType.Map ? "Map" : "Heightmap") + " successfully exported.", "Success",
+							(type == ImageExportType.Map ? "地图" : "高度图") + " successfully exported.", "Success",
 							JOptionPane.INFORMATION_MESSAGE);
 				}
 

@@ -128,7 +128,7 @@ public class NewSettingsDialog extends JDialog
 		bottomPanel.setLayout(new BoxLayout(bottomPanel, BoxLayout.X_AXIS));
 
 
-		JButton randomizeThemeButton = new JButton("Randomize Theme");
+		JButton randomizeThemeButton = new JButton("随机主题");
 		randomizeThemeButton.addActionListener(new ActionListener()
 		{
 			@Override
@@ -141,7 +141,7 @@ public class NewSettingsDialog extends JDialog
 		bottomPanel.add(Box.createHorizontalStrut(5));
 
 
-		JButton randomizeLandButton = new JButton("Randomize Land");
+		JButton randomizeLandButton = new JButton("随机化土地");
 		randomizeLandButton.addActionListener(new ActionListener()
 		{
 			@Override
@@ -156,7 +156,7 @@ public class NewSettingsDialog extends JDialog
 
 		progressBar = new JProgressBar();
 		progressBar.setStringPainted(true);
-		progressBar.setString("Drawing...");
+		progressBar.setString("绘图...");
 		progressBar.setIndeterminate(true);
 		progressBar.setVisible(false);
 		bottomPanel.add(progressBar);
@@ -223,11 +223,11 @@ public class NewSettingsDialog extends JDialog
 			dimensionsComboBox.addItem(dimension);
 		}
 		createMapChangeListener(dimensionsComboBox);
-		organizer.addLabelAndComponent("Dimensions: <br>(cannot be changed in editor)",
-				"Dimensions of the map when exported at 100% resolution, although the resolution can be scaled up or down while"
-						+ " exporting. This doesn't include the border, if you add one.",
+		organizer.addLabelAndComponent("尺寸: <br>(在编辑器中无法更改)",
+				"导出时地图的尺寸（100% 分辨率），虽然在导出时分辨率可以上下缩放。"
+				+ " 如果您添加了边框，这不包括边框。",
 				dimensionsComboBox);
-
+		
 		worldSizeSlider = new JSlider();
 		worldSizeSlider.setSnapToTicks(true);
 		worldSizeSlider.setMajorTickSpacing(8000);
@@ -237,9 +237,9 @@ public class NewSettingsDialog extends JDialog
 		worldSizeSlider.setMinimum(SettingsGenerator.minWorldSize);
 		worldSizeSlider.setMaximum(SettingsGenerator.maxWorldSize);
 		createMapChangeListener(worldSizeSlider);
-		organizer.addLabelAndComponent("World size: <br>(cannot be changed in editor)",
-				"The number of polygons in the randomly generated world.", worldSizeSlider);
-
+		organizer.addLabelAndComponent("世界大小: <br>(在编辑器中无法更改)",
+				"随机生成世界中的多边形数量。", worldSizeSlider);
+		
 		edgeLandToWaterProbSlider = new JSlider();
 		edgeLandToWaterProbSlider.setValue(70);
 		edgeLandToWaterProbSlider.setPaintTicks(true);
@@ -248,18 +248,17 @@ public class NewSettingsDialog extends JDialog
 		edgeLandToWaterProbSlider.setMajorTickSpacing(25);
 		{
 			Hashtable<Integer, JLabel> labelTable = new Hashtable<Integer, JLabel>();
-			for (int i = edgeLandToWaterProbSlider.getMinimum(); i < edgeLandToWaterProbSlider.getMaximum()
-					+ 1; i += edgeLandToWaterProbSlider.getMajorTickSpacing())
+			for (int i = edgeLandToWaterProbSlider.getMinimum(); i < edgeLandToWaterProbSlider.getMaximum() + 1; i += edgeLandToWaterProbSlider.getMajorTickSpacing())
 			{
 				labelTable.put(i, new JLabel(Double.toString(i / 100.0)));
 			}
 			edgeLandToWaterProbSlider.setLabelTable(labelTable);
 		}
 		createMapChangeListener(edgeLandToWaterProbSlider);
-		organizer.addLabelAndComponent("Edge land probability:",
-				"The probability that a tectonic plate touching the edge of the map will be land rather than ocean.",
+		organizer.addLabelAndComponent("边缘土地概率:",
+				"接触地图边缘的构造板块是土地而不是海洋的概率。",
 				edgeLandToWaterProbSlider);
-
+		
 		centerLandToWaterProbSlider = new JSlider();
 		centerLandToWaterProbSlider.setValue(70);
 		centerLandToWaterProbSlider.setPaintTicks(true);
@@ -268,34 +267,33 @@ public class NewSettingsDialog extends JDialog
 		centerLandToWaterProbSlider.setMajorTickSpacing(25);
 		{
 			Hashtable<Integer, JLabel> labelTable = new Hashtable<Integer, JLabel>();
-			for (int i = centerLandToWaterProbSlider.getMinimum(); i < centerLandToWaterProbSlider.getMaximum()
-					+ 1; i += centerLandToWaterProbSlider.getMajorTickSpacing())
+			for (int i = centerLandToWaterProbSlider.getMinimum(); i < centerLandToWaterProbSlider.getMaximum() + 1; i += centerLandToWaterProbSlider.getMajorTickSpacing())
 			{
 				labelTable.put(i, new JLabel(Double.toString(i / 100.0)));
 			}
 			centerLandToWaterProbSlider.setLabelTable(labelTable);
 		}
 		createMapChangeListener(centerLandToWaterProbSlider);
-		organizer.addLabelAndComponent("Center land probability:",
-				"The probability that a tectonic plate not touching the edge of the map will be land rather than ocean.",
+		organizer.addLabelAndComponent("中心土地概率:",
+				"不接触地图边缘的构造板块是土地而不是海洋的概率。",
 				centerLandToWaterProbSlider);
-
+		
 		landColoringMethodComboBox = new JComboBox<LandColoringMethod>();
 		for (LandColoringMethod method : LandColoringMethod.values())
 		{
 			landColoringMethodComboBox.addItem(method);
 		}
-
+		
 		createMapChangeListener(landColoringMethodComboBox);
-		organizer.addLabelAndComponent("Land coloring method:", "How to color the land.", landColoringMethodComboBox);
-
-
-		JButton changeButton = new JButton("Change");
+		organizer.addLabelAndComponent("土地着色方法:", "如何着色土地。", landColoringMethodComboBox);
+		
+		JButton changeButton = new JButton("更改");  // 汉化按钮文本
 		pathDisplay = new JTextField();
 		pathDisplay.setText(FileHelper.replaceHomeFolderPlaceholder(UserPreferences.getInstance().defaultCustomImagesPath));
 		pathDisplay.setEditable(false);
-		organizer.addLabelAndComponentsHorizontal("Custom Images Folder:", "Configure custom images to use when generating this map.",
+		organizer.addLabelAndComponentsHorizontal("自定义图片文件夹:", "配置在生成此地图时使用的自定义图片。",
 				Arrays.asList(pathDisplay, changeButton));
+		
 
 		changeButton.addActionListener(new ActionListener()
 		{
@@ -359,18 +357,19 @@ public class NewSettingsDialog extends JDialog
 		cityFrequencySlider.setMaximum(100);
 		cityFrequencySlider.setMajorTickSpacing(25);
 		createMapChangeListener(cityFrequencySlider);
-		organizer.addLabelAndComponent("City frequency:",
-				"Higher values create more cities. Lower values create less cities. Zero means no cities.", cityFrequencySlider);
+		organizer.addLabelAndComponent("城市频率:",
+        "更高的值会产生更多的城市。较低的值会产生较少的城市。零表示没有城市。",
+        cityFrequencySlider);
 
 		cityIconsTypeComboBox = new JComboBox<String>();
 		createMapChangeListener(cityIconsTypeComboBox);
-		organizer.addLabelAndComponent("City icon type:", "The set of city images to use.", cityIconsTypeComboBox);
-
+		organizer.addLabelAndComponent("城市图标类型:", "要使用的一组城市图像。", cityIconsTypeComboBox);
 
 		booksWidget = new BooksWidget(true, () -> handleMapChange());
 		booksWidget.getContentPanel().setPreferredSize(new Dimension(360, 180));
-		organizer.addLeftAlignedComponentWithStackedLabel("Books for generating text:",
-				"Selected books will be used to generate new names.", booksWidget.getContentPanel());
+		organizer.addLeftAlignedComponentWithStackedLabel("用于生成文本的书籍:",
+				"选择的书籍将用于生成新名称。", booksWidget.getContentPanel());
+
 
 		organizer.addLeftAlignedComponent(
 				Box.createRigidArea(new Dimension((defaultSize.width / 2) - amountToSubtractFromLeftAndRightPanels, 0)));
@@ -434,7 +433,7 @@ public class NewSettingsDialog extends JDialog
 
 	private void createMapEditingPanel()
 	{
-		BufferedImage placeHolder = AwtFactory.unwrap(ImageHelper.createPlaceholderImage(new String[] { "Drawing..." }));
+		BufferedImage placeHolder = AwtFactory.unwrap(ImageHelper.createPlaceholderImage(new String[] { "绘制中..." }));
 		mapEditingPanel = new MapEditingPanel(placeHolder);
 
 		mapEditingPanelContainer = new JPanel();
@@ -578,7 +577,7 @@ public class NewSettingsDialog extends JDialog
 				return i;
 			}
 		}
-		throw new IllegalArgumentException("No dropdown menu option with dimentions " + generatedWidth + " x " + generatedHeight);
+		throw new IllegalArgumentException("没有带尺寸的下拉菜单选项 " + generatedWidth + " x " + generatedHeight);
 	}
 
 	private void enableOrDisableProgressBar(boolean enable)

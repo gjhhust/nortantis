@@ -149,15 +149,16 @@ public class ThemePanel extends JTabbedPane
 	public ThemePanel(MainWindow mainWindow)
 	{
 		this.mainWindow = mainWindow;
-
+	
 		setPreferredSize(new Dimension(SwingHelper.sidePanelPreferredWidth, mainWindow.getContentPane().getHeight()));
 		setMinimumSize(new Dimension(SwingHelper.sidePanelMinimumWidth, getMinimumSize().height));
-
-		addTab("Background", createBackgroundPanel(mainWindow));
-		addTab("Border", createBorderPanel(mainWindow));
-		addTab("Effects", createEffectsPanel(mainWindow));
-		addTab("Fonts", createFontsPanel(mainWindow));
+	
+		addTab("背景", createBackgroundPanel(mainWindow));  // "Background"翻译为"背景"
+		addTab("边框", createBorderPanel(mainWindow));      // "Border"翻译为"边框"
+		addTab("特效", createEffectsPanel(mainWindow));      // "Effects"翻译为"特效"
+		addTab("字体", createFontsPanel(mainWindow));        // "Fonts"翻译为"字体"
 	}
+	
 
 	private Component createBackgroundPanel(MainWindow mainWindow)
 	{
@@ -174,18 +175,19 @@ public class ThemePanel extends JTabbedPane
 			}
 		};
 
-		rdbtnFractal = new JRadioButton("Fractal noise");
+		rdbtnFractal = new JRadioButton("分形噪声");  // "Fractal noise"翻译为"分形噪声"
 		rdbtnFractal.addActionListener(backgroundImageButtonGroupListener);
-
-		rdbtnGeneratedFromTexture = new JRadioButton("Generated from texture");
+		
+		rdbtnGeneratedFromTexture = new JRadioButton("从纹理生成");  // "Generated from texture"翻译为"从纹理生成"
 		rdbtnGeneratedFromTexture.addActionListener(backgroundImageButtonGroupListener);
-
-		ButtonGroup backgoundImageButtonGroup = new ButtonGroup();
-		backgoundImageButtonGroup.add(rdbtnGeneratedFromTexture);
-		backgoundImageButtonGroup.add(rdbtnFractal);
-
-		organizer.addLabelAndComponentsVertical("Background:", "Select how to generate the background image.",
+		
+		ButtonGroup backgroundImageButtonGroup = new ButtonGroup();
+		backgroundImageButtonGroup.add(rdbtnGeneratedFromTexture);
+		backgroundImageButtonGroup.add(rdbtnFractal);
+		
+		organizer.addLabelAndComponentsVertical("背景:", "选择生成背景图像的方式。",
 				Arrays.asList(rdbtnFractal, rdbtnGeneratedFromTexture));
+		
 
 		textureImageFilename = new JTextField();
 		textureImageFilename.getDocument().addDocumentListener(new DocumentListener()
@@ -218,7 +220,7 @@ public class ThemePanel extends JTabbedPane
 			}
 		});
 
-		JButton btnsBrowseTextureImage = new JButton("Browse");
+		JButton btnsBrowseTextureImage = new JButton("浏览");
 		btnsBrowseTextureImage.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -236,8 +238,8 @@ public class ThemePanel extends JTabbedPane
 		textureFileChooseButtonPanel.add(btnsBrowseTextureImage);
 		textureFileChooseButtonPanel.add(Box.createHorizontalGlue());
 
-		textureImageHider = organizer.addLabelAndComponentsVertical("Texture image:",
-				"Texture image that will be used to randomly generate a background.",
+		textureImageHider = organizer.addLabelAndComponentsVertical("纹理图像:",
+				"用于随机生成背景的纹理图像。",
 				Arrays.asList(textureImageFilename, Box.createVerticalStrut(5), textureFileChooseButtonPanel));
 
 		backgroundSeedTextField = new JTextField();
@@ -267,7 +269,7 @@ public class ThemePanel extends JTabbedPane
 			}
 		});
 
-		btnNewBackgroundSeed = new JButton("New Seed");
+		btnNewBackgroundSeed = new JButton("新种子");
 		btnNewBackgroundSeed.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -276,16 +278,16 @@ public class ThemePanel extends JTabbedPane
 				updateBackgroundImageDisplays();
 			}
 		});
-		btnNewBackgroundSeed.setToolTipText("Generate a new random seed.");
-		organizer.addLabelAndComponentsHorizontal("Random seed:",
-				"The random seed used to generate the background image. Note that the background texture will also change based on the"
-						+ " resolution you draw at.",
+		btnNewBackgroundSeed.setToolTipText("生成新的随机种子.");
+		organizer.addLabelAndComponentsHorizontal("随机种子:",
+				"用于生成背景图像的随机种子。 请注意，背景纹理也会根据"
+						+ " 绘制的分辨率。",
 				Arrays.asList(backgroundSeedTextField, btnNewBackgroundSeed));
 
 		organizer.addSeperator();
-		colorizeLandCheckbox = new JCheckBox("Color land");
+		colorizeLandCheckbox = new JCheckBox("陆地颜色");
 		colorizeLandCheckbox
-				.setToolTipText("Whether to change the land texture to a custom color versus use the color of the texture image");
+				.setToolTipText("是否将土地纹理更改为自定义颜色，而不是使用纹理图像的颜色");
 		colorizeLandCheckboxHider = organizer.addLeftAlignedComponent(colorizeLandCheckbox);
 
 		landColoringMethodComboBox = new JComboBox<LandColoringMethod>();
@@ -303,7 +305,7 @@ public class ThemePanel extends JTabbedPane
 				handleFullRedraw();
 			}
 		});
-		organizer.addLabelAndComponent("Land coloring method:", "How to color the land.", landColoringMethodComboBox);
+		organizer.addLabelAndComponent("土地着色法:", "如何为土地着色.", landColoringMethodComboBox);
 
 		colorizeCheckboxListener = new ItemListener()
 		{
@@ -342,7 +344,7 @@ public class ThemePanel extends JTabbedPane
 						handleFullRedraw();
 					}
 				};
-				Dialog dialog = JColorChooser.createDialog(mainWindow, "Land Color", false, colorChooser, okHandler, cancelHandler);
+				Dialog dialog = JColorChooser.createDialog(mainWindow, "土地颜色", false, colorChooser, okHandler, cancelHandler);
 				dialog.setVisible(true);
 			}
 		});
@@ -353,14 +355,14 @@ public class ThemePanel extends JTabbedPane
 			container.add(landDisplayPanel);
 			btnChooseLandColor.setAlignmentX(CENTER_ALIGNMENT);
 
-			landColorHider = organizer.addLabelAndComponentsVertical("Land color:", "The color of the land background.",
+			landColorHider = organizer.addLabelAndComponentsVertical("土地颜色:", "土地背景的颜色。",
 					Arrays.asList(container, Box.createVerticalStrut(5), btnChooseLandColor));
 		}
 
 		organizer.addSeperator();
-		colorizeOceanCheckbox = new JCheckBox("Color ocean");
-		colorizeOceanCheckbox
-				.setToolTipText("Whether to change the ocean texture to a custom color versus use the color of the texture image");
+		colorizeOceanCheckbox = new JCheckBox("给海洋着色");  // "Color ocean"翻译为"给海洋着色"
+		colorizeOceanCheckbox.setToolTipText("是否将海洋纹理更改为自定义颜色，而不是使用纹理图像的颜色。");  // 汉化工具提示
+		
 		colorizeOceanCheckboxHider = organizer.addLeftAlignedComponent(colorizeOceanCheckbox);
 
 		oceanDisplayPanel = new BGColorPreviewPanel();
@@ -369,7 +371,7 @@ public class ThemePanel extends JTabbedPane
 		oceanDisplayPanel.setMinimumSize(backgroundDisplaySize);
 		oceanDisplayPanel.setBackground(Color.BLACK);
 
-		btnChooseOceanColor = new JButton("Choose");
+		btnChooseOceanColor = new JButton("选择");
 		btnChooseOceanColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -389,7 +391,7 @@ public class ThemePanel extends JTabbedPane
 						handleFullRedraw();
 					}
 				};
-				Dialog dialog = JColorChooser.createDialog(mainWindow, "Ocean Color", false, colorChooser, okHandler, cancelHandler);
+				Dialog dialog = JColorChooser.createDialog(mainWindow, "海洋颜色", false, colorChooser, okHandler, cancelHandler);
 				dialog.setVisible(true);
 			}
 		});
@@ -400,7 +402,7 @@ public class ThemePanel extends JTabbedPane
 			container.add(oceanDisplayPanel);
 			btnChooseOceanColor.setAlignmentX(CENTER_ALIGNMENT);
 
-			organizer.addLabelAndComponentsVertical("Ocean color:", "The color of the ocean.",
+			organizer.addLabelAndComponentsVertical("海洋颜色:", "The color of the ocean.",
 					Arrays.asList(container, Box.createVerticalStrut(5), btnChooseOceanColor));
 		}
 
@@ -413,8 +415,8 @@ public class ThemePanel extends JTabbedPane
 		GridBagOrganizer organizer = new GridBagOrganizer();
 		JPanel borderPanel = organizer.panel;
 
-		drawBorderCheckbox = new JCheckBox("Create border");
-		drawBorderCheckbox.setToolTipText("When checked, a border will be drawn around the map.");
+		drawBorderCheckbox = new JCheckBox("创建边框");  // "Create border"翻译为"创建边框"
+		drawBorderCheckbox.setToolTipText("选中时，会在地图周围绘制边框。");  // 汉化工具提示
 		drawBorderCheckbox.addActionListener(new ActionListener()
 		{
 			@Override
@@ -428,7 +430,7 @@ public class ThemePanel extends JTabbedPane
 
 		borderTypeComboBox = new JComboBox<String>();
 		createMapChangeListenerForFullRedraw(borderTypeComboBox);
-		organizer.addLabelAndComponent("Border type:", "The set of images to draw for the border", borderTypeComboBox);
+		organizer.addLabelAndComponent("边框类型:", "绘制边框时使用的图像集", borderTypeComboBox);  // 汉化标签和描述
 
 		{
 			borderWidthSlider = new JSlider();
@@ -442,15 +444,14 @@ public class ThemePanel extends JTabbedPane
 			borderWidthSlider.setMajorTickSpacing(200);
 			createMapChangeListenerForFullRedraw(borderWidthSlider);
 			SwingHelper.setSliderWidthForSidePanel(borderWidthSlider);
-			organizer.addLabelAndComponent("Border width:",
-					"Width of the border in pixels, scaled according to the resolution the map is drawn at.", borderWidthSlider);
+			organizer.addLabelAndComponent("边框宽度:", 
+					"边框的像素宽度，根据地图绘制时的分辨率进行缩放。", borderWidthSlider);  // 汉化边框宽度描述
 		}
 		organizer.addHorizontalSpacerRowToHelpComponentAlignment(0.6);
 
-
 		organizer.addSeperator();
-		frayedEdgeCheckbox = new JCheckBox("Fray edges");
-		frayedEdgeCheckbox.setToolTipText("Whether to fray the edges of the map.");
+		frayedEdgeCheckbox = new JCheckBox("磨损边缘");  // "Fray edges"翻译为"磨损边缘"
+		frayedEdgeCheckbox.setToolTipText("是否磨损地图的边缘。");  // 汉化工具提示
 		frayedEdgeCheckboxActionListener = new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -471,8 +472,8 @@ public class ThemePanel extends JTabbedPane
 		frayedEdgeShadingSlider.setMajorTickSpacing(100);
 		createMapChangeListenerForFrayedEdgeOrGrungeChange(frayedEdgeShadingSlider);
 		SwingHelper.setSliderWidthForSidePanel(frayedEdgeShadingSlider);
-		organizer.addLabelAndComponent("Fray shading width:",
-				"The width of shading drawn around frayed edges. The color used is the grunge color.", frayedEdgeShadingSlider);
+		organizer.addLabelAndComponent("磨损阴影宽度:", 
+				"绘制在磨损边缘周围的阴影宽度。使用的颜色是磨损颜色。", frayedEdgeShadingSlider);  // 汉化磨损阴影描述
 
 		frayedEdgeSizeSlider = new JSlider();
 		frayedEdgeSizeSlider.setPaintTicks(true);
@@ -483,14 +484,13 @@ public class ThemePanel extends JTabbedPane
 		frayedEdgeSizeSlider.setMajorTickSpacing(2);
 		createMapChangeListenerForFrayedEdgeOrGrungeChange(frayedEdgeSizeSlider);
 		SwingHelper.setSliderWidthForSidePanel(frayedEdgeSizeSlider);
-		organizer.addLabelAndComponent("Fray size:",
-				"Determines the number of polygons used when creating the frayed border. Higher values make the fray larger.",
-				frayedEdgeSizeSlider);
+		organizer.addLabelAndComponent("磨损大小:", 
+				"确定创建磨损边框时使用的多边形数量。更高的值使磨损更大。", frayedEdgeSizeSlider);  // 汉化磨损大小描述
 
 		organizer.addSeperator();
 
-		drawGrungeCheckbox = new JCheckBox("Draw grunge");
-		drawGrungeCheckbox.setToolTipText("Whether to draw grunge around the edges of the map.");
+		drawGrungeCheckbox = new JCheckBox("绘制磨损");  // "Draw grunge"翻译为"绘制磨损"
+		drawGrungeCheckbox.setToolTipText("是否在地图边缘绘制磨损。");  // 汉化工具提示
 		drawGrungeCheckboxActionListener = new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -502,19 +502,18 @@ public class ThemePanel extends JTabbedPane
 		drawGrungeCheckbox.addActionListener(drawGrungeCheckboxActionListener);
 		organizer.addLeftAlignedComponent(drawGrungeCheckbox);
 
-
 		grungeColorDisplay = SwingHelper.createColorPickerPreviewPanel();
 
-		grungeColorChooseButton = new JButton("Choose");
+		grungeColorChooseButton = new JButton("选择");  // "Choose"翻译为"选择"
 		grungeColorChooseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
-				SwingHelper.showColorPicker(borderPanel, grungeColorDisplay, "Grunge Color", () -> handleFrayedEdgeOrGrungeChange());
+				SwingHelper.showColorPicker(borderPanel, grungeColorDisplay, "磨损颜色", () -> handleFrayedEdgeOrGrungeChange());  // 汉化对话框标题
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("Edge/Grunge color:", "Grunge and frayed edge shading will be this color",
-				Arrays.asList(grungeColorDisplay, grungeColorChooseButton), SwingHelper.colorPickerLeftPadding);
+		organizer.addLabelAndComponentsHorizontal("边缘/磨损颜色:", "磨损和磨损边缘阴影将使用此颜色", 
+				Arrays.asList(grungeColorDisplay, grungeColorChooseButton), SwingHelper.colorPickerLeftPadding);  // 汉化边缘/磨损颜色描述
 
 		grungeSlider = new JSlider();
 		grungeSlider.setValue(0);
@@ -525,72 +524,73 @@ public class ThemePanel extends JTabbedPane
 		grungeSlider.setMajorTickSpacing(1000);
 		createMapChangeListenerForFrayedEdgeOrGrungeChange(grungeSlider);
 		SwingHelper.setSliderWidthForSidePanel(grungeSlider);
-		organizer.addLabelAndComponent("Grunge width:", "Determines the width of grunge on the edges of the map. 0 means none.",
-				grungeSlider);
+		organizer.addLabelAndComponent("磨损宽度:", "确定地图边缘的磨损宽度。0表示没有磨损。", 
+				grungeSlider);  // 汉化磨损宽度描述
 
 		organizer.addVerticalFillerRow();
 		return organizer.createScrollPane();
 	}
 
+
 	private Component createEffectsPanel(MainWindow mainWindow)
 	{
 		GridBagOrganizer organizer = new GridBagOrganizer();
-
+	
 		JPanel effectsPanel = organizer.panel;
-
-		jaggedLinesButton = new JRadioButton("Jagged");
+	
+		jaggedLinesButton = new JRadioButton("锯齿状");  // "Jagged"翻译为"锯齿状"
 		createMapChangeListenerForFullRedraw(jaggedLinesButton);
-		splinesLinesButton = new JRadioButton("Splines");
+		splinesLinesButton = new JRadioButton("样条线");  // "Splines"翻译为"样条线"
 		createMapChangeListenerForFullRedraw(splinesLinesButton);
-		splinesWithSmoothedCoastlinesButton = new JRadioButton("Splines with smoothed coastlines");
+		splinesWithSmoothedCoastlinesButton = new JRadioButton("带平滑海岸线的样条线");  // "Splines with smoothed coastlines"翻译为"带平滑海岸线的样条线"
 		createMapChangeListenerForFullRedraw(splinesWithSmoothedCoastlinesButton);
+		
 		ButtonGroup lineStyleButtonGroup = new ButtonGroup();
 		lineStyleButtonGroup.add(jaggedLinesButton);
 		lineStyleButtonGroup.add(splinesLinesButton);
 		lineStyleButtonGroup.add(splinesWithSmoothedCoastlinesButton);
-		organizer.addLabelAndComponentsVertical("Line style:",
-				"The style of lines to use when drawing coastlines, lakeshores, and region boundaries",
+		
+		organizer.addLabelAndComponentsVertical("线条样式:",  // "Line style:"翻译为"线条样式:"
+				"绘制海岸线、湖岸和区域边界时使用的线条样式",  // 汉化描述
 				Arrays.asList(jaggedLinesButton, splinesLinesButton, splinesWithSmoothedCoastlinesButton));
 		organizer.addSeperator();
-
+	
 		coastlineColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		JButton buttonChooseCoastlineColor = new JButton("Choose");
+	
+		JButton buttonChooseCoastlineColor = new JButton("选择");  // "Choose"翻译为"选择"
 		buttonChooseCoastlineColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(effectsPanel, coastlineColorDisplay, "Coastline Color", () -> handleTerrainChange());
+				SwingHelper.showColorPicker(effectsPanel, coastlineColorDisplay, "海岸线颜色", () -> handleTerrainChange());  // "Coastline Color"翻译为"海岸线颜色"
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("Coastline color:", "The color of the coastline",
+		organizer.addLabelAndComponentsHorizontal("海岸线颜色:", "海岸线的颜色",  // "Coastline color:"翻译为"海岸线颜色:"
 				Arrays.asList(coastlineColorDisplay, buttonChooseCoastlineColor), SwingHelper.colorPickerLeftPadding);
-
+	
 		coastShadingColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		btnChooseCoastShadingColor = new JButton("Choose");
+	
+		btnChooseCoastShadingColor = new JButton("选择");  // "Choose"翻译为"选择"
 		btnChooseCoastShadingColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(effectsPanel, coastShadingColorDisplay, "Coast Shading Color", () ->
+				SwingHelper.showColorPicker(effectsPanel, coastShadingColorDisplay, "海岸阴影颜色", () ->  // "Coast Shading Color"翻译为"海岸阴影颜色"
 				{
 					updateCoastShadingTransparencySliderFromCoastShadingColorDisplay();
 					handleTerrainChange();
 				});
 			}
 		});
-		String coastShadingColorLabelText = "Coast shading color:";
+		String coastShadingColorLabelText = "海岸阴影颜色:";  // "Coast shading color:"翻译为"海岸阴影颜色:"
 		coastShadingColorHider = organizer.addLabelAndComponentsHorizontal(coastShadingColorLabelText,
-				"Land near coastlines will be shaded this color. Transparency is supported.",
+				"靠近海岸的土地将被此颜色阴影覆盖。支持透明度。",
 				Arrays.asList(coastShadingColorDisplay, btnChooseCoastShadingColor), SwingHelper.colorPickerLeftPadding);
-
-		final String message = "<html>Disabled because the land coloring" + " method is '" + LandColoringMethod.ColorPoliticalRegions
-				+ "'.<html>";
+	
+		final String message = "<html>已禁用，因为土地着色方法为 '" + LandColoringMethod.ColorPoliticalRegions + "'.<html>";  // 汉化内容
 		coastShadingColorDisabledMessageHider = organizer.addLabelAndComponent(coastShadingColorLabelText, "", new JLabel(message));
 		coastShadingColorDisabledMessageHider.setVisible(false);
-
-
+	
 		{
 			coastShadingTransparencySlider = new JSlider(0, 100);
 			final int initialValue = 0;
@@ -601,11 +601,10 @@ public class ThemePanel extends JTabbedPane
 				updateCoastShadingColorDisplayFromCoastShadingTransparencySlider();
 				handleTerrainChange();
 			});
-			coastShadingTransparencyHider = sliderWithDisplay.addToOrganizer(organizer, "Coast shading transparency:",
-					"Transparency of shading of land near coastlines");
+			coastShadingTransparencyHider = sliderWithDisplay.addToOrganizer(organizer, "海岸阴影透明度:",  // "Coast shading transparency:"翻译为"海岸阴影透明度:"
+					"靠近海岸的土地阴影的透明度");
 		}
-
-
+	
 		coastShadingSlider = new JSlider();
 		coastShadingSlider.setValue(30);
 		coastShadingSlider.setPaintTicks(true);
@@ -615,12 +614,12 @@ public class ThemePanel extends JTabbedPane
 		coastShadingSlider.setMajorTickSpacing(20);
 		createMapChangeListenerForTerrainChange(coastShadingSlider);
 		SwingHelper.setSliderWidthForSidePanel(coastShadingSlider);
-		organizer.addLabelAndComponent("Coast shading width:",
-				"How far in from coastlines to shade land. Also applies to region boundaries if regions are drawn.", coastShadingSlider);
-
+		organizer.addLabelAndComponent("海岸阴影宽度:",  // "Coast shading width:"翻译为"海岸阴影宽度:"
+				"从海岸向内阴影的距离。如果绘制区域边界也适用。", coastShadingSlider);
+	
 		ButtonGroup oceanEffectButtonGroup = new ButtonGroup();
-
-		concentricWavesButton = new JRadioButton("Concentric waves");
+	
+		concentricWavesButton = new JRadioButton("同心波");  // "Concentric waves"翻译为"同心波"
 		oceanEffectButtonGroup.add(concentricWavesButton);
 		oceanEffectsListener = new ActionListener()
 		{
@@ -633,35 +632,36 @@ public class ThemePanel extends JTabbedPane
 			}
 		};
 		concentricWavesButton.addActionListener(oceanEffectsListener);
-
-		fadingConcentricWavesButton = new JRadioButton("Fading concentric waves");
+	
+		fadingConcentricWavesButton = new JRadioButton("渐变同心波");  // "Fading concentric waves"翻译为"渐变同心波"
 		oceanEffectButtonGroup.add(fadingConcentricWavesButton);
 		fadingConcentricWavesButton.addActionListener(oceanEffectsListener);
-
-		ripplesRadioButton = new JRadioButton("Ripples");
+	
+		ripplesRadioButton = new JRadioButton("涟漪");  // "Ripples"翻译为"涟漪"
 		oceanEffectButtonGroup.add(ripplesRadioButton);
 		ripplesRadioButton.addActionListener(oceanEffectsListener);
-
-		shadeRadioButton = new JRadioButton("Shade");
+	
+		shadeRadioButton = new JRadioButton("阴影");  // "Shade"翻译为"阴影"
 		oceanEffectButtonGroup.add(shadeRadioButton);
 		shadeRadioButton.addActionListener(oceanEffectsListener);
-		organizer.addLabelAndComponentsVertical("Ocean effects type:", "How to draw either waves or shading in the ocean along coastlines",
+		organizer.addLabelAndComponentsVertical("海洋效果类型:",  // "Ocean effects type:"翻译为"海洋效果类型:"
+				"如何在海岸线附近绘制波浪或阴影",
 				Arrays.asList(concentricWavesButton, fadingConcentricWavesButton, ripplesRadioButton, shadeRadioButton));
-
+	
 		oceanEffectsColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		JButton btnChooseOceanEffectsColor = new JButton("Choose");
+	
+		JButton btnChooseOceanEffectsColor = new JButton("选择");  // "Choose"翻译为"选择"
 		btnChooseOceanEffectsColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(effectsPanel, oceanEffectsColorDisplay, "Ocean Effects Color", () -> handleTerrainChange());
+				SwingHelper.showColorPicker(effectsPanel, oceanEffectsColorDisplay, "海洋效果颜色", () -> handleTerrainChange());  // "Ocean Effects Color"翻译为"海洋效果颜色"
 			}
 		});
-		btnChooseOceanEffectsColor.setToolTipText("Choose a color for ocean effects near coastlines. Transparency is supported.");
-		organizer.addLabelAndComponentsHorizontal("Ocean effects color:", "The color of the ocean effects. Transparency is supported.",
+		btnChooseOceanEffectsColor.setToolTipText("选择海岸附近海洋效果的颜色。支持透明度。");
+		organizer.addLabelAndComponentsHorizontal("海洋效果颜色:", "海洋效果的颜色。支持透明度。",
 				Arrays.asList(oceanEffectsColorDisplay, btnChooseOceanEffectsColor), SwingHelper.colorPickerLeftPadding);
-
+	
 		concentricWavesLevelSlider = new JSlider();
 		concentricWavesLevelSlider.setMinimum(1);
 		concentricWavesLevelSlider.setPaintTicks(true);
@@ -671,7 +671,7 @@ public class ThemePanel extends JTabbedPane
 		concentricWavesLevelSlider.setMajorTickSpacing(1);
 		createMapChangeListenerForTerrainChange(concentricWavesLevelSlider);
 		SwingHelper.setSliderWidthForSidePanel(concentricWavesLevelSlider);
-
+	
 		oceanEffectsLevelSlider = new JSlider();
 		oceanEffectsLevelSlider.setMinorTickSpacing(5);
 		oceanEffectsLevelSlider.setValue(2);
@@ -680,28 +680,28 @@ public class ThemePanel extends JTabbedPane
 		oceanEffectsLevelSlider.setMajorTickSpacing(20);
 		createMapChangeListenerForTerrainChange(oceanEffectsLevelSlider);
 		SwingHelper.setSliderWidthForSidePanel(oceanEffectsLevelSlider);
-		organizer.addLabelAndComponentsVertical("Ocean effects width:", "How far from coastlines ocean effects should extend.",
+		organizer.addLabelAndComponentsVertical("海洋效果宽度:",  // "Ocean effects width:"翻译为"海洋效果宽度:"
+				"海洋效果应延伸多远，距离海岸线。",
 				Arrays.asList(concentricWavesLevelSlider, oceanEffectsLevelSlider));
-
-		drawOceanEffectsInLakesCheckbox = new JCheckBox("Draw ocean waves/shading in lakes.");
+	
+		drawOceanEffectsInLakesCheckbox = new JCheckBox("在湖泊中绘制海洋波浪/阴影。");  // "Draw ocean waves/shading in lakes."翻译为"在湖泊中绘制海洋波浪/阴影。"
 		createMapChangeListenerForTerrainChange(drawOceanEffectsInLakesCheckbox);
 		organizer.addLeftAlignedComponent(drawOceanEffectsInLakesCheckbox);
 		organizer.addSeperator();
-
+	
 		riverColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		JButton riverColorChooseButton = new JButton("Choose");
+	
+		JButton riverColorChooseButton = new JButton("选择");  // "Choose"翻译为"选择"
 		riverColorChooseButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(effectsPanel, riverColorDisplay, "River Color", () -> handleTerrainChange());
+				SwingHelper.showColorPicker(effectsPanel, riverColorDisplay, "河流颜色", () -> handleTerrainChange());  // "River Color"翻译为"河流颜色"
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("River color:", "Rivers will be drawn this color.",
+		organizer.addLabelAndComponentsHorizontal("河流颜色:", "河流将绘制为此颜色。",
 				Arrays.asList(riverColorDisplay, riverColorChooseButton), SwingHelper.colorPickerLeftPadding);
-
-
+	
 		organizer.addSeperator();
 		mountainScaleSlider = new JSlider(minScaleSliderValue, maxScaleSliderValue);
 		mountainScaleSlider.setMajorTickSpacing(2);
@@ -718,8 +718,8 @@ public class ThemePanel extends JTabbedPane
 			}
 		});
 		enableSizeSliderListeners = true;
-		organizer.addLabelAndComponent("Mountain size:", "Changes the size of all mountains on the map", mountainScaleSlider);
-
+		organizer.addLabelAndComponent("山脉大小:", "改变地图上所有山脉的大小", mountainScaleSlider);  // "Mountain size:"翻译为"山脉大小:"
+	
 		hillScaleSlider = new JSlider(minScaleSliderValue, maxScaleSliderValue);
 		hillScaleSlider.setMajorTickSpacing(2);
 		hillScaleSlider.setMinorTickSpacing(1);
@@ -734,8 +734,8 @@ public class ThemePanel extends JTabbedPane
 				handleTerrainChange();
 			}
 		});
-		organizer.addLabelAndComponent("Hill size:", "Changes the size of all hills on the map", hillScaleSlider);
-
+		organizer.addLabelAndComponent("丘陵大小:", "改变地图上所有丘陵的大小", hillScaleSlider);  // "Hill size:"翻译为"丘陵大小:"
+	
 		duneScaleSlider = new JSlider(minScaleSliderValue, maxScaleSliderValue);
 		duneScaleSlider.setMajorTickSpacing(2);
 		duneScaleSlider.setMinorTickSpacing(1);
@@ -750,9 +750,8 @@ public class ThemePanel extends JTabbedPane
 				handleTerrainChange();
 			}
 		});
-		organizer.addLabelAndComponent("Dune size:", "Changes the size of all sand dunes on the map", duneScaleSlider);
-		
-		
+		organizer.addLabelAndComponent("沙丘大小:", "改变地图上所有沙丘的大小", duneScaleSlider);  // "Dune size:"翻译为"沙丘大小:"
+	
 		// If I change the maximum here, also update densityScale in IconDrawer.drawTreesForCenters.
 		treeHeightSlider = new JSlider(minScaleSliderValue, maxScaleSliderValue);
 		treeHeightSlider.setMajorTickSpacing(2);
@@ -770,10 +769,9 @@ public class ThemePanel extends JTabbedPane
 			}
 		});
 		enableSizeSliderListeners = true;
-		organizer.addLabelAndComponent("Tree height:",
-				"Changes the height of all trees on the map, and redistributes trees to preserve forest density", treeHeightSlider);
-		
-
+		organizer.addLabelAndComponent("树木高度:",  // "Tree height:"翻译为"树木高度:"
+				"改变地图上所有树木的高度，并重新分配树木以保持森林密度", treeHeightSlider);
+	
 		cityScaleSlider = new JSlider(minScaleSliderValue, maxScaleSliderValue);
 		cityScaleSlider.setMajorTickSpacing(2);
 		cityScaleSlider.setMinorTickSpacing(1);
@@ -788,13 +786,12 @@ public class ThemePanel extends JTabbedPane
 				handleTerrainChange();
 			}
 		});
-		organizer.addLabelAndComponent("City size:", "Changes the size of all cities on the map", cityScaleSlider);
-
-
+		organizer.addLabelAndComponent("城市大小:", "改变地图上所有城市的大小", cityScaleSlider);  // "City size:"翻译为"城市大小:"
+	
 		organizer.addVerticalFillerRow();
 		return organizer.createScrollPane();
 	}
-
+	
 	private void unselectAnyIconBeingEdited()
 	{
 		if (mainWindow.toolsPanel != null && mainWindow.toolsPanel.currentTool != null
@@ -803,7 +800,7 @@ public class ThemePanel extends JTabbedPane
 			((IconsTool) mainWindow.toolsPanel.currentTool).unselectAnyIconBeingEdited();
 		}
 	}
-
+	
 	private void triggerRebuildAllAnchoredTrees()
 	{
 		mainWindow.edits.freeIcons.doWithLock(() ->
@@ -992,67 +989,67 @@ public class ThemePanel extends JTabbedPane
 	private Component createFontsPanel(MainWindow mainWindow)
 	{
 		GridBagOrganizer organizer = new GridBagOrganizer();
-
+	
 		JPanel fontsPanel = organizer.panel;
-
-		enableTextCheckBox = new JCheckBox("Enable text");
-		enableTextCheckBox.setToolTipText("Enable/disable drawing text. When unselected, text will still exist, but will not be shown.");
+	
+		enableTextCheckBox = new JCheckBox("启用文本");  // "Enable text"翻译为"启用文本"
+		enableTextCheckBox.setToolTipText("启用/禁用绘制文本。未选中时，文本仍然存在，但不会显示。");  // 汉化工具提示
 		organizer.addLeftAlignedComponent(enableTextCheckBox);
 		organizer.addSeperator();
-
-		Tuple2<JLabel, JButton> tupleTitle = organizer.addFontChooser("Title font:", 70, () -> handleFontsChange());
+	
+		Tuple2<JLabel, JButton> tupleTitle = organizer.addFontChooser("标题字体:", 70, () -> handleFontsChange());  // "Title font:"翻译为"标题字体:"
 		titleFontDisplay = tupleTitle.getFirst();
 		btnTitleFont = tupleTitle.getSecond();
-
-		Tuple2<JLabel, JButton> tupleRegion = organizer.addFontChooser("Region font:", 40, () -> handleFontsChange());
+	
+		Tuple2<JLabel, JButton> tupleRegion = organizer.addFontChooser("区域字体:", 40, () -> handleFontsChange());  // "Region font:"翻译为"区域字体:"
 		regionFontDisplay = tupleRegion.getFirst();
 		btnRegionFont = tupleRegion.getSecond();
-
-		Tuple2<JLabel, JButton> tupleMountainRange = organizer.addFontChooser("Mountain range font:", 30, () -> handleFontsChange());
+	
+		Tuple2<JLabel, JButton> tupleMountainRange = organizer.addFontChooser("山脉字体:", 30, () -> handleFontsChange());  // "Mountain range font:"翻译为"山脉字体:"
 		mountainRangeFontDisplay = tupleMountainRange.getFirst();
 		btnMountainRangeFont = tupleMountainRange.getSecond();
-
-		Tuple2<JLabel, JButton> tupleCitiesMountains = organizer.addFontChooser("Cities/mountains font:", 30, () -> handleFontsChange());
+	
+		Tuple2<JLabel, JButton> tupleCitiesMountains = organizer.addFontChooser("城市/山脉字体:", 30, () -> handleFontsChange());  // "Cities/mountains font:"翻译为"城市/山脉字体:"
 		otherMountainsFontDisplay = tupleCitiesMountains.getFirst();
 		btnOtherMountainsFont = tupleCitiesMountains.getSecond();
-
-		Tuple2<JLabel, JButton> tupleRiver = organizer.addFontChooser("River/lake font:", 30, () -> handleFontsChange());
+	
+		Tuple2<JLabel, JButton> tupleRiver = organizer.addFontChooser("河流/湖泊字体:", 30, () -> handleFontsChange());  // "River/lake font:"翻译为"河流/湖泊字体:"
 		riverFontDisplay = tupleRiver.getFirst();
 		btnRiverFont = tupleRiver.getSecond();
-
+	
 		organizer.addSeperator();
 		textColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		btnChooseTextColor = new JButton("Choose");
+	
+		btnChooseTextColor = new JButton("选择");  // "Choose"翻译为"选择"
 		btnChooseTextColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(fontsPanel, textColorDisplay, "Text Color", () -> handleFontsChange());
+				SwingHelper.showColorPicker(fontsPanel, textColorDisplay, "文本颜色", () -> handleFontsChange());  // "Text Color"翻译为"文本颜色"
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("Text color:", "", Arrays.asList(textColorDisplay, btnChooseTextColor),
+		organizer.addLabelAndComponentsHorizontal("文本颜色:", "", Arrays.asList(textColorDisplay, btnChooseTextColor),
 				SwingHelper.colorPickerLeftPadding);
-
+	
 		organizer.addSeperator();
-		drawBoldBackgroundCheckbox = new JCheckBox("Bold background for region and title names");
-		drawBoldBackgroundCheckbox.setToolTipText("Whether to draw bolded letters behind region and title text to highlight them.");
+		drawBoldBackgroundCheckbox = new JCheckBox("区域和标题名称的粗体背景");  // "Bold background for region and title names"翻译为"区域和标题名称的粗体背景"
+		drawBoldBackgroundCheckbox.setToolTipText("是否在区域和标题文本后绘制粗体字母以突出显示它们。");  // 汉化工具提示
 		organizer.addLeftAlignedComponent(drawBoldBackgroundCheckbox);
-
+	
 		boldBackgroundColorDisplay = SwingHelper.createColorPickerPreviewPanel();
-
-		btnChooseBoldBackgroundColor = new JButton("Choose");
+	
+		btnChooseBoldBackgroundColor = new JButton("选择");  // "Choose"翻译为"选择"
 		btnChooseBoldBackgroundColor.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				SwingHelper.showColorPicker(fontsPanel, boldBackgroundColorDisplay, "Bold Background Color", () -> handleFontsChange());
+				SwingHelper.showColorPicker(fontsPanel, boldBackgroundColorDisplay, "粗体背景颜色", () -> handleFontsChange());  // "Bold Background Color"翻译为"粗体背景颜色"
 			}
 		});
-		organizer.addLabelAndComponentsHorizontal("Bold background color:",
-				"If '" + drawBoldBackgroundCheckbox.getText()
-						+ "' is checked, title and region names will be given a bold background in this color.",
-				Arrays.asList(boldBackgroundColorDisplay, btnChooseBoldBackgroundColor), SwingHelper.colorPickerLeftPadding);
+		organizer.addLabelAndComponentsHorizontal("粗体背景颜色:",  // "Bold background color:"翻译为"粗体背景颜色:"
+				"如果 '" + drawBoldBackgroundCheckbox.getText()
+						+ "' 被选中，标题和区域名称将被赋予此颜色的粗体背景。",
+				Arrays.asList(boldBackgroundColorDisplay, btnChooseBoldBackgroundColor), SwingHelper.colorPickerLeftPadding);	
 
 		drawBoldBackgroundCheckbox.addActionListener(new ActionListener()
 		{
@@ -1602,7 +1599,8 @@ public class ThemePanel extends JTabbedPane
 
 	public enum LandColoringMethod
 	{
-		SingleColor("Single Color"), ColorPoliticalRegions("Color Political Regions");
+		SingleColor("单一颜色"), ColorPoliticalRegions("着色政治区域");
+
 
 		private final String name;
 

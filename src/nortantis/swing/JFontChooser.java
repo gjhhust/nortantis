@@ -677,7 +677,7 @@ public class JFontChooser extends JComponent
 			p.add(getFontFamilyTextField(), BorderLayout.NORTH);
 			p.add(scrollPane, BorderLayout.CENTER);
 
-			JLabel label = new JLabel(("Font Name"));
+			JLabel label = new JLabel(("字体名称"));
 			label.setHorizontalAlignment(JLabel.LEFT);
 			label.setHorizontalTextPosition(JLabel.LEFT);
 			label.setLabelFor(getFontFamilyTextField());
@@ -708,7 +708,7 @@ public class JFontChooser extends JComponent
 			p.add(getFontStyleTextField(), BorderLayout.NORTH);
 			p.add(scrollPane, BorderLayout.CENTER);
 
-			JLabel label = new JLabel(("Font Style"));
+			JLabel label = new JLabel(("字体样式"));
 			label.setHorizontalAlignment(JLabel.LEFT);
 			label.setHorizontalTextPosition(JLabel.LEFT);
 			label.setLabelFor(getFontStyleTextField());
@@ -738,7 +738,7 @@ public class JFontChooser extends JComponent
 			p.add(getFontSizeTextField(), BorderLayout.NORTH);
 			p.add(scrollPane, BorderLayout.CENTER);
 
-			JLabel label = new JLabel(("Font Size"));
+			JLabel label = new JLabel(("字体大小"));
 			label.setHorizontalAlignment(JLabel.LEFT);
 			label.setHorizontalTextPosition(JLabel.LEFT);
 			label.setLabelFor(getFontSizeTextField());
@@ -773,7 +773,7 @@ public class JFontChooser extends JComponent
 		{
 			Border lowered = BorderFactory.createLoweredBevelBorder();
 
-			sampleText = new JTextField(("AaBbYyZz"));
+			sampleText = new JTextField(("AaBbYyZz/中文显示"));
 			sampleText.setBorder(lowered);
 			sampleText.setPreferredSize(new Dimension(300, 100));
 		}
@@ -796,10 +796,10 @@ public class JFontChooser extends JComponent
 		{
 			int i = 0;
 			fontStyleNames = new String[4];
-			fontStyleNames[i++] = ("Plain");
-			fontStyleNames[i++] = ("Bold");
-			fontStyleNames[i++] = ("Italic");
-			fontStyleNames[i++] = ("BoldItalic");
+			fontStyleNames[i++] = ("常规");
+			fontStyleNames[i++] = ("加粗");
+			fontStyleNames[i++] = ("斜体");
+			fontStyleNames[i++] = ("加粗斜体");
 		}
 		return fontStyleNames;
 	}

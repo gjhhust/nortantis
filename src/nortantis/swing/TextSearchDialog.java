@@ -37,7 +37,7 @@ public class TextSearchDialog extends JDialog
 
 	public TextSearchDialog(MainWindow mainWindow)
 	{
-		super(mainWindow, "Search Text", Dialog.ModalityType.MODELESS);
+		super(mainWindow, "搜索文本", Dialog.ModalityType.MODELESS);
 		setSize(450, 70);
 		setResizable(false);
 
@@ -108,7 +108,7 @@ public class TextSearchDialog extends JDialog
 
 		final int fontSize = 24;
 		searchForward = new JButton("→");
-		searchForward.setToolTipText("Search forward (enter key)");
+		searchForward.setToolTipText("向前搜索（回车键）");
 		searchForward.setFont(new java.awt.Font(searchForward.getFont().getName(), searchForward.getFont().getStyle(), fontSize));
 		getRootPane().setDefaultButton(searchForward);
 		container.add(searchForward);
@@ -123,7 +123,7 @@ public class TextSearchDialog extends JDialog
 		});
 
 		searchBackward = new JButton("←");
-		searchBackward.setToolTipText("Search backward");
+		searchBackward.setToolTipText("向后搜索");
 		searchBackward.setFont(new java.awt.Font(searchBackward.getFont().getName(), searchBackward.getFont().getStyle(), fontSize));
 		container.add(searchBackward);
 		searchBackward.addActionListener(new ActionListener()
