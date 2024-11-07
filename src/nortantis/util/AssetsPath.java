@@ -6,7 +6,7 @@ public class AssetsPath
 	 * This flag is set by hand to tell assets to look for files in the install
 	 * folder for the system rather than in a relative folder.
 	 */
-	public static boolean isInstalled = true;
+	public static boolean isInstalled = false;
 
 	private static String installPath;
 
