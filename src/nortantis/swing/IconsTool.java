@@ -126,7 +126,7 @@ public class IconsTool extends EditorTool
 			ButtonGroup group = new ButtonGroup();
 			List<JComponent> radioButtons = new ArrayList<>();
 
-			mountainsButton = new JRadioButton("Mountains");
+			mountainsButton = new JRadioButton("山脉");
 			group.add(mountainsButton);
 			radioButtons.add(mountainsButton);
 			mountainsButton.setSelected(true);
@@ -139,7 +139,7 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			hillsButton = new JRadioButton("Hills");
+			hillsButton = new JRadioButton("山区");
 			group.add(hillsButton);
 			radioButtons.add(hillsButton);
 			hillsButton.addActionListener(new ActionListener()
@@ -151,7 +151,7 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			dunesButton = new JRadioButton("Dunes");
+			dunesButton = new JRadioButton("沙丘");
 			group.add(dunesButton);
 			radioButtons.add(dunesButton);
 			dunesButton.addActionListener(new ActionListener()
@@ -163,7 +163,7 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			treesButton = new JRadioButton("Trees");
+			treesButton = new JRadioButton("树木");
 			group.add(treesButton);
 			radioButtons.add(treesButton);
 			treesButton.addActionListener(new ActionListener()
@@ -175,7 +175,7 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			citiesButton = new JRadioButton("Cities");
+			citiesButton = new JRadioButton("城市");
 			group.add(citiesButton);
 			radioButtons.add(citiesButton);
 			citiesButton.addActionListener(new ActionListener()
@@ -187,7 +187,7 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			decorationsButton = new JRadioButton("Decorations");
+			decorationsButton = new JRadioButton("装饰");
 			group.add(decorationsButton);
 			radioButtons.add(decorationsButton);
 			decorationsButton.addActionListener(new ActionListener()
@@ -211,13 +211,13 @@ public class IconsTool extends EditorTool
 				}
 			});
 
-			organizer.addLabelAndComponentsVertical("Type:", "The type of icon to add/edit.", radioButtons);
+			organizer.addLabelAndComponentsVertical("类型:", "要添加/编辑的图标类型。", radioButtons);  // "Type:"翻译为"类型:", "The type of icon to add/edit."翻译为"要添加/编辑的图标类型。"
 		}
-
-		modeWidget = new DrawModeWidget("Draw using the selected brush", "Erase using the selected brush", true,
-				"Use the selected brush to replace existing icons of the same type", true, "Move or scale individual icons",
+		modeWidget = new DrawModeWidget("使用选定的画笔绘制", "使用选定的画笔擦除", true,
+				"使用选定的画笔替换相同类型的现有图标", true, "移动或缩放单个图标",
 				() -> handleModeChanged());
-		modeWidget.addToOrganizer(organizer, "Whether to draw or erase using the selected brush type");
+		modeWidget.addToOrganizer(organizer, "选择画笔类型时是否绘制或擦除");  // "Whether to draw or erase using the selected brush type"翻译为"选择画笔类型时是否绘制或擦除"
+		
 
 		Tuple2<JComboBox<ImageIcon>, RowHider> brushSizeTuple = organizer.addBrushSizeComboBox(brushSizes);
 		brushSizeComboBox = brushSizeTuple.getFirst();
@@ -228,7 +228,7 @@ public class IconsTool extends EditorTool
 			densitySlider.setValue(7);
 			SwingHelper.setSliderWidthForSidePanel(densitySlider);
 			SliderWithDisplayedValue sliderWithDisplay = new SliderWithDisplayedValue(densitySlider);
-			densityHider = sliderWithDisplay.addToOrganizer(organizer, "Density:", "");
+			densityHider = sliderWithDisplay.addToOrganizer(organizer, "密度:", "");
 		}
 
 		mountainTypes = createOrUpdateRadioButtonsForIconType(organizer, IconType.mountains, mountainTypes, null);
@@ -323,7 +323,7 @@ public class IconsTool extends EditorTool
 		if (existing == null)
 		{
 			JPanel buttonsPanel = new JPanel();
-			result = new IconTypeButtons(organizer.addLabelAndComponentsVerticalWithComponentPanel("Type:", "", radioButtons, buttonsPanel),
+			result = new IconTypeButtons(organizer.addLabelAndComponentsVerticalWithComponentPanel("类型:", "", radioButtons, buttonsPanel),
 					radioButtons, buttonsPanel);
 		}
 		else
@@ -438,12 +438,13 @@ public class IconsTool extends EditorTool
 							if (!iconsInGroup.containsKey(iconNameWithoutWidthOrExtension))
 							{
 								throw new IllegalArgumentException(
-										"No '" + selector.type + "' icon exists for the button '" + iconNameWithoutWidthOrExtension + "'");
+										"对于按钮 '" + iconNameWithoutWidthOrExtension + "'，没有 '" + selector.type + "' 图标存在");
 							}
 							Image icon = iconsInGroup.get(iconNameWithoutWidthOrExtension).getFirst().image;
 							Image preview = createIconPreview(settings, Collections.singletonList(icon), 45, 0, selector.type);
 							previewImages.add(preview);
 						}
+								
 
 						return previewImages;
 					}
@@ -494,7 +495,7 @@ public class IconsTool extends EditorTool
 			isNew = false;
 		}
 
-		updateNamedIconSelector(organizer, customImagesPath, cityButtons, isNew, selectedCity, "Decorations: ");
+		updateNamedIconSelector(organizer, customImagesPath, cityButtons, isNew, selectedCity, "装饰: ");
 	}
 
 	private void createOrUpdateDecorationButtons(GridBagOrganizer organizer, String customImagesPath)
@@ -517,7 +518,7 @@ public class IconsTool extends EditorTool
 			isNew = false;
 		}
 
-		updateNamedIconSelector(organizer, customImagesPath, decorationButtons, isNew, selectedButton, "Decorations: ");
+		updateNamedIconSelector(organizer, customImagesPath, decorationButtons, isNew, selectedButton, "装饰：");
 	}
 
 	private static void updateNamedIconSelector(GridBagOrganizer organizer, String customImagesPath, NamedIconSelector selector,

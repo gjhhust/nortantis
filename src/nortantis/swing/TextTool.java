@@ -68,50 +68,50 @@ public class TextTool extends EditorTool
 	protected JPanel createToolOptionsPanel()
 	{
 		GridBagOrganizer organizer = new GridBagOrganizer();
-
+	
 		JPanel toolOptionsPanel = organizer.panel;
 		toolOptionsPanel.setBorder(BorderFactory.createEmptyBorder(3, 3, 3, 3));
-
-		drawTextDisabledLabel = new JLabel("<html>This tool is disabled because drawing text is disabled in the Fonts tab.</html>");
+	
+		drawTextDisabledLabel = new JLabel("<html>此工具已禁用，因为在字体选项卡中禁用了绘制文本。</html>");  // 汉化信息
 		drawTextDisabledLabelHider = organizer.addLeftAlignedComponent(drawTextDisabledLabel);
 		drawTextDisabledLabelHider.setVisible(false);
-
+	
 		{
 			ButtonGroup group = new ButtonGroup();
 			List<JRadioButton> radioButtons = new ArrayList<>();
-
+	
 			ActionListener listener = new ActionListener()
 			{
-
+	
 				@Override
 				public void actionPerformed(ActionEvent e)
 				{
 					handleActionChanged();
 				}
 			};
-
-			editButton = new JRadioButton("<HTML>Edi<U>t</U></HTML>");
+	
+			editButton = new JRadioButton("<HTML>编<U>辑</U></HTML>");  // "Edit"翻译为"编辑"
 			group.add(editButton);
 			radioButtons.add(editButton);
 			editButton.addActionListener(listener);
 			editButton.setMnemonic(KeyEvent.VK_T);
-			editButton.setToolTipText("Edit text (Alt+T)");
-
-			addButton = new JRadioButton("<HTML><U>A</U>dd</HTML>");
+			editButton.setToolTipText("编辑文本 (Alt+T)");  // 汉化工具提示
+	
+			addButton = new JRadioButton("<HTML><U>添</U>加</HTML>");  // "Add"翻译为"添加"
 			group.add(addButton);
 			radioButtons.add(addButton);
 			addButton.addActionListener(listener);
 			addButton.setMnemonic(KeyEvent.VK_A);
-			addButton.setToolTipText("Add new text of the selected text type (Alt+A)");
-
-			eraseButton = new JRadioButton("<HTML><U>E</U>rase</HTML>");
+			addButton.setToolTipText("添加所选文本类型的新文本 (Alt+A)");  // 汉化工具提示
+	
+			eraseButton = new JRadioButton("<HTML><U>擦</U>除</HTML>");  // "Erase"翻译为"擦除"
 			group.add(eraseButton);
 			radioButtons.add(eraseButton);
 			eraseButton.addActionListener(listener);
 			eraseButton.setMnemonic(KeyEvent.VK_E);
-			eraseButton.setToolTipText("Erase text (Alt+E)");
-
-			organizer.addLabelAndComponentsVertical("Action:", "", radioButtons);
+			eraseButton.setToolTipText("擦除文本 (Alt+E)");  // 汉化工具提示
+	
+			organizer.addLabelAndComponentsVertical("操作:", "", radioButtons);  // "Action:"翻译为"操作:"
 		}
 
 		editTextField = new JTextField();

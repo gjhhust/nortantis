@@ -1581,6 +1581,7 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 ʹ�� --help ���г����ܵ�ѡ��.
 2024.11.08 20:30:49 WARN  javac exited with exit code 2
 2024.11.08 20:30:49 INFO  time: compiled Nortantis in 0.45s
+<<<<<<< HEAD
 2024.11.08 20:37:16 INFO  compiling nortantis (168 java sources)
 2024.11.08 20:37:16 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
 �÷�: javac <ѡ��> <Դ�ļ�>
@@ -1623,3 +1624,5 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 ʹ�� --help ���г����ܵ�ѡ��.
 2024.11.08 20:39:30 WARN  javac exited with exit code 2
 2024.11.08 20:39:30 INFO  time: compiled Nortantis in 0.32s
+=======
+>>>>>>> refs/heads/release-v2.85.cn
