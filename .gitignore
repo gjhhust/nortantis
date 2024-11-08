@@ -1,5 +1,3 @@
-.metals
-
 bin/*
 coastline_mask.png
 elevation.png
@@ -20,7 +18,6 @@ fantasy_map_creator/*
 matched_*.png
 experiment*.png
 ocean_small.png
-
 mystery.png
 cloud.ng
 colorized.png
