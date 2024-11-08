@@ -1368,3 +1368,185 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 ʹ�� --help ���г����ܵ�ѡ��.
 2024.11.08 19:14:47 WARN  javac exited with exit code 2
 2024.11.08 19:14:47 INFO  time: compiled Nortantis in 0.33s
+2024.11.08 19:18:18 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:18 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:18 WARN  javac exited with exit code 2
+2024.11.08 19:18:18 INFO  time: compiled Nortantis in 0.38s
+2024.11.08 19:18:18 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:19 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:19 WARN  javac exited with exit code 2
+2024.11.08 19:18:19 INFO  time: compiled Nortantis in 0.33s
+2024.11.08 19:18:21 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:18:21 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:21 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:21 WARN  javac exited with exit code 2
+2024.11.08 19:18:21 INFO  time: compiled Nortantis in 0.32s
+2024.11.08 19:18:25 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:25 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:25 WARN  javac exited with exit code 2
+2024.11.08 19:18:25 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:18:27 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:18:27 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:27 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:27 WARN  javac exited with exit code 2
+2024.11.08 19:18:27 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:18:33 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:34 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:18:33 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:33 WARN  javac exited with exit code 2
+2024.11.08 19:18:33 INFO  time: compiled Nortantis in 0.31s
+2024.11.08 19:18:54 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:54 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:54 WARN  javac exited with exit code 2
+2024.11.08 19:18:54 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:18:59 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:18:59 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:18:59 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:18:59 WARN  javac exited with exit code 2
+2024.11.08 19:18:59 INFO  time: compiled Nortantis in 0.32s
+2024.11.08 19:19:21 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:21 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:21 WARN  javac exited with exit code 2
+2024.11.08 19:19:21 INFO  time: compiled Nortantis in 0.34s
+2024.11.08 19:19:30 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:30 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:30 WARN  javac exited with exit code 2
+2024.11.08 19:19:30 INFO  time: compiled Nortantis in 0.31s
+2024.11.08 19:19:37 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:37 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:37 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:37 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:37 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:37 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:37 WARN  javac exited with exit code 2
+2024.11.08 19:19:37 INFO  time: compiled Nortantis in 0.32s
+2024.11.08 19:19:38 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:38 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:38 WARN  javac exited with exit code 2
+2024.11.08 19:19:38 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:19:44 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:44 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:44 WARN  javac exited with exit code 2
+2024.11.08 19:19:44 INFO  time: compiled Nortantis in 0.36s
+2024.11.08 19:19:51 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:51 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:51 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:51 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:51 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:51 WARN  javac exited with exit code 2
+2024.11.08 19:19:51 INFO  time: compiled Nortantis in 0.33s
+11月 08, 2024 7:19:53 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1535
+2024.11.08 19:19:53 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:53 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:53 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:53 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:53 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:53 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+11月 08, 2024 7:19:53 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1539
+11月 08, 2024 7:19:53 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1540
+2024.11.08 19:19:53 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:53 WARN  javac exited with exit code 2
+2024.11.08 19:19:53 INFO  time: compiled Nortantis in 0.34s
+2024.11.08 19:19:55 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:55 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:55 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:55 WARN  javac exited with exit code 2
+2024.11.08 19:19:55 INFO  time: compiled Nortantis in 0.28s
+2024.11.08 19:19:56 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:19:56 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:19:56 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:19:56 WARN  javac exited with exit code 2
+2024.11.08 19:19:56 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:20:30 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:20:30 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:20:30 WARN  javac exited with exit code 2
+2024.11.08 19:20:30 INFO  time: compiled Nortantis in 0.31s
+11月 08, 2024 7:20:34 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.11.08 19:21:15 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:21:15 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:21:15 WARN  javac exited with exit code 2
+2024.11.08 19:21:15 INFO  time: compiled Nortantis in 0.3s
+11月 08, 2024 7:21:19 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1613
+2024.11.08 19:21:21 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:21:21 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:21:21 WARN  javac exited with exit code 2
+2024.11.08 19:21:21 INFO  time: compiled Nortantis in 0.29s
+2024.11.08 19:21:21 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:21:22 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:21:22 WARN  javac exited with exit code 2
+2024.11.08 19:21:22 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 19:22:00 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:22:00 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:22:00 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:22:00 WARN  javac exited with exit code 2
+2024.11.08 19:22:00 INFO  time: compiled Nortantis in 0.27s
+11月 08, 2024 7:22:43 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1799
+2024.11.08 19:22:47 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:22:47 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:22:47 WARN  javac exited with exit code 2
+2024.11.08 19:22:47 INFO  time: compiled Nortantis in 0.28s
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 INFO  compiling nortantis (168 java sources)
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\swing\DrawModeWidget.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 19:24:09 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 19:24:09 WARN  javac exited with exit code 2
+2024.11.08 19:24:09 INFO  time: compiled Nortantis in 0.39s
