@@ -503,7 +503,7 @@ public class ImageExportDialog extends JDialog
 			fileChooser.setSelectedFile(new File(filePath));
 		}
 
-		int status = fileChooser.showDialog(parent, "Select");
+		int status = fileChooser.showDialog(parent, "选择");
 		if (status == JFileChooser.APPROVE_OPTION)
 		{
 			return fileChooser.getSelectedFile().toString();

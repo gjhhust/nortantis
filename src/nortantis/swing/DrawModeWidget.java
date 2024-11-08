@@ -12,6 +12,8 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
+import nortantis.platform.Font;
+
 public class DrawModeWidget
 {
 	private JToggleButton drawModeButton;
@@ -82,31 +84,37 @@ public class DrawModeWidget
 				changeListener.run();
 			}
 		};
-
-		drawModeButton = new JToggleButton("<html><u>D</u>raw</html>");
+		drawModeButton = new JToggleButton("绘制");  // "Draw"翻译为"绘制"
 		drawModeButton.setToolTipText(drawTooltipWithoutKeyboardShortcut + " (Alt+D)");
 		drawModeButton.setSelected(true);
 		drawModeButton.addActionListener(modeListener);
 		drawModeButton.setMnemonic(KeyEvent.VK_D);
 		drawModeButton.setPreferredSize(new Dimension(51, drawModeButton.getPreferredSize().height));
 
-		replaceModeButton = new JToggleButton("<html><u>R</u>eplace</html>");
+		replaceModeButton = new JToggleButton("替换");  // "Replace"翻译为"替换"
 		replaceModeButton.setToolTipText(replaceTooltipWithoutKeyboardShortcut + " (Alt+R)");
 		replaceModeButton.addActionListener(modeListener);
 		replaceModeButton.setMnemonic(KeyEvent.VK_R);
 		replaceModeButton.setPreferredSize(new Dimension(65, replaceModeButton.getPreferredSize().height));
-
-		editModeButton = new JToggleButton("<html>Edi<u>t</u></html>");
+		
+		editModeButton = new JToggleButton("编辑");  // "Edit"翻译为"编辑"
 		editModeButton.setToolTipText(editTooltipWithoutKeyboardShortcut + " (Alt+T)");
 		editModeButton.addActionListener(modeListener);
 		editModeButton.setMnemonic(KeyEvent.VK_T);
 		editModeButton.setPreferredSize(new Dimension(51, editModeButton.getPreferredSize().height));
-
-		eraseModeButton = new JToggleButton("<html><u>E</u>rase</html>");
+		
+		eraseModeButton = new JToggleButton("擦除");  // "Erase"翻译为"擦除"
 		eraseModeButton.setToolTipText(eraseTooltipWithoutKeyboardShortcut + " (Alt+E)");
 		eraseModeButton.addActionListener(modeListener);
 		eraseModeButton.setMnemonic(KeyEvent.VK_E);
 		eraseModeButton.setPreferredSize(new Dimension(51, eraseModeButton.getPreferredSize().height));
+		
+		// 获取当前字体并减小大小
+		java.awt.Font currentFont = drawModeButton.getFont();
+		drawModeButton.setFont(currentFont.deriveFont(currentFont.getSize2D() - 2f)); // 将字体大小减小2
+		replaceModeButton.setFont(currentFont.deriveFont(currentFont.getSize2D() - 2f)); // 将字体大小减小2
+		editModeButton.setFont(currentFont.deriveFont(currentFont.getSize2D() - 2f)); // 将字体大小减小2
+		eraseModeButton.setFont(currentFont.deriveFont(currentFont.getSize2D() - 2f)); // 将字体大小减小2
 	}
 
 	public RowHider addToOrganizer(GridBagOrganizer organizer, String labelTooltip)
