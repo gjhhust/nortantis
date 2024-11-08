@@ -1599,3 +1599,27 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 ʹ�� --help ���г����ܵ�ѡ��.
 2024.11.08 20:37:42 WARN  javac exited with exit code 2
 2024.11.08 20:37:42 INFO  time: compiled Nortantis in 0.34s
+2024.11.08 20:39:27 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:39:27 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:39:27 WARN  javac exited with exit code 2
+2024.11.08 20:39:27 INFO  time: compiled Nortantis in 0.29s
+2024.11.08 20:39:27 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:39:27 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:39:27 WARN  javac exited with exit code 2
+2024.11.08 20:39:27 INFO  time: compiled Nortantis in 0.31s
+2024.11.08 20:39:30 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:39:30 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:39:30 WARN  javac exited with exit code 2
+2024.11.08 20:39:30 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 20:39:30 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:39:30 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:39:30 WARN  javac exited with exit code 2
+2024.11.08 20:39:30 INFO  time: compiled Nortantis in 0.32s
