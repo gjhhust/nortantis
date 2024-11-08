@@ -1550,3 +1550,34 @@ java.nio.file.FileSystemNotFoundException: Provider "git" not installed
 ʹ�� --help ���г����ܵ�ѡ��.
 2024.11.08 19:24:09 WARN  javac exited with exit code 2
 2024.11.08 19:24:09 INFO  time: compiled Nortantis in 0.39s
+11月 08, 2024 8:26:15 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1962
+11月 08, 2024 8:26:15 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1967
+11月 08, 2024 8:26:15 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1963
+2024.11.08 20:26:17 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:26:17 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:26:17 WARN  javac exited with exit code 2
+2024.11.08 20:26:17 INFO  time: compiled Nortantis in 0.33s
+2024.11.08 20:26:17 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:26:17 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:26:17 WARN  javac exited with exit code 2
+2024.11.08 20:26:17 INFO  time: compiled Nortantis in 0.3s
+2024.11.08 20:30:49 INFO  compiling nortantis (168 java sources)
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 ERROR code navigation does not work for the file 'E:\TRPG\fu\地图\nortantis\src\nortantis\util\AssetsPath.java' because the build target Nortantis is being compiled. Wait until compilation is finished and try again.
+2024.11.08 20:30:49 WARN  Unexpected javac output: ����: �Ҳ����ļ�: E:\TRPG\fu\地图\nortantis\src\nortantis\Background.java
+�÷�: javac <ѡ��> <Դ�ļ�>
+ʹ�� --help ���г����ܵ�ѡ��.
+2024.11.08 20:30:49 WARN  javac exited with exit code 2
+2024.11.08 20:30:49 INFO  time: compiled Nortantis in 0.45s
