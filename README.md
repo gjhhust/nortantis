@@ -6,7 +6,7 @@ Nortantis 是一个奇幻地图生成器，最初作为一个学术项目创建�
 本项目从 [https://github.com/jeheydorn/nortantis](https://github.com/jeheydorn/nortantis) 翻译而来（英文翻译成中文）。
 
 # 安装
-在(页面)[https://github.com/gjhhust/nortantis/releases]中下载最新版本的安装程序(.msi文件)。
+在[页面](https://github.com/gjhhust/nortantis/releases)中下载最新版本的安装程序(.msi文件)。
 
 # 开发
 
