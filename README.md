@@ -10,7 +10,7 @@ Nortantis 是一个奇幻地图生成器，最初作为一个学术项目创建�
 
 # 使用
 软件完整使用的视频介绍如下：
-<iframe src="https://www.bilibili.com/video/BV1tXDkYNETs/?share_source=copy_web&vd_source=ff0df5754af2f6d7048e8637a0924110" width="640" height="480"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113454010597513&bvid=BV1tXDkYNETs&cid=26689995074&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 **素材包的使用步骤**：
 1. 官方素材包无需设置，软件会自动使用官方素材。
