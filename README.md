@@ -66,7 +66,7 @@ Nortantis 是一个奇幻地图生成器，最初作为一个学术项目创建�
 3. 素材文件命名需满足“name1 width=150.png”的格式，其中width决定了素材放置上去的大小。
 
 **分享方法**：
-您可以通过GitHub提交您的素材：
+您可以通过GitHub提交您的素材（[提交案例](https://github.com/gjhhust/nortantis/issues/2)）：
 1. 打开项目的GitHub仓库：[https://github.com/gjhhust/nortantis](https://github.com/gjhhust/nortantis)
 2. 点击"Issues"选项卡
 3. 点击"New issue"按钮
